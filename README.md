@@ -1,1 +1,4 @@
-# STAT-5241
+# Statistical Machine Learning Spring 2019
+
+### Objectives:
+This course provides an introduction to Machine Learning and its core algorithms, with an emphasison the statistical properties of the learning methods. Topics include linear methods for regressionand classification, model selection and regularization, kernels, decision  trees, boosting, bagging, random forests, suport vector machines, principle component analysis, clustering, and Bayesianmodels.The course also gives a brief introduction to convex optimization and Markov chain MonteCarlo. Advanced topics may include neural networks, spectral clustering and non-linear dimensionreduction methods. The course is designed by studying deep Mathematic/Statistical theories and practical analysis within R and Python. Therefore, the repo helps me to track my coursework such as homeworks, labs and projects.
