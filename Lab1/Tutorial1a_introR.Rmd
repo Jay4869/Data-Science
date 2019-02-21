@@ -1,0 +1,120 @@
+---
+title: "Introduction to R"
+output:
+  html_notebook: default
+  html_document: default
+  pdf_document: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Executing each chunk by clicking the *Run* button within the chunk. 
+
+```{r, echo=TRUE}
+1+2
+3*5
+pi
+3.5^3
+sqrt(9)
+```
+
+```{r, echo=TRUE}
+height<-c(64, 67, 68, 70, 65)
+weight<-c(120, 140, 165, 190, 130)
+summary(height)
+weight
+height
+dat1=cbind(weight, height)
+dat1
+```
+
+```{r}
+plot(weight~height, data=dat1, pch=16)
+```
+
+#### Plotting symbols and colors
+```{r}
+plot(1:20, 1:20, pch=1:20, col=1:6)
+```
+`R` has a *recycling rule*: "Vectors occurring in the same expression need not all be of the same length. If they are not, the value of the expression is a vector with the same length as the longest vector which occurs in the expression. Shorter vectors in the expression are recycled as often as need be (perhaps fractionally) until they match the length of the longest vector. In particular a constant is simply repeated." 
+
+In the above example, I only specified 6 colors where there are 20 points. The six colors are simply repeated. 
+
+In `R` colors can be called by names as well. See [here](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) for list of colors and their names
+```{r}
+plot(rnorm(30, 0, 1), rnorm(30, 0, 1), pch=8, cex=2, col=c("dodgerblue1", "firebrick1"))
+```
+
+`RColorBrewer` is R package that allow automatic generations of colors. It can generate colors from different [palettes](https://i1.wp.com/bc.bojanorama.pl/wp-content/uploads/2013/04/rcolorsheet-1.png). 
+```{r}
+library(RColorBrewer)
+col.use=brewer.pal(5, "Spectral")
+plot(runif(50, 0, 1), runif(50, 0, 1), pch=c(8, 18), cex=2, col=col.use)
+```
+
+
+#### Equally spaced values
+```{r}
+1:20 # Integers from 1 to 20.
+-4:5 # Integers from -4 to 5
+5:1  # Integers from 5 to 1
+seq(0,1, len=20) # 20 numbers equally spaced between 0 and 1. 
+```
+#### Repeated values
+```{r}
+rep(c(1,2,3), each=3)
+rep(c(2,4,6), 4)
+```
+
+#### Enter data using `c()`.
+R can read data from the console. This is not practical for real data sets.
+```{r}
+x <- c(1, 23, 2, 3, 12, 18, 6, 9)
+x
+mean(x)
+median(x)
+var(x)
+par(mfrow=c(1,2))
+boxplot(x)
+hist(x)
+```
+## Indexing data
+
+We often wish to examine part of a set of data. Suppose that our data is stored in the matrix A
+```{r}
+A= matrix(1:16, nrow=4,ncol=4)
+A
+```
+Then typing
+```{r}
+A[2,3]
+```
+will select the element corresponding to the second row and the third column. The first number after the open-bracket symbol [ always referes to the ro, and the second number always refers to the column. We can also select multiple rows and columns at a time, by providing vectors as the indices.
+```{r}
+A[c(1,3), c(2,4)]
+A[1:3, 2:4]
+A[1:2, ]
+A[, 3:4]
+```
+The last two examples include either no index for the columns or no index for the rows. These indicate that R should include all columns or all rows, respectively. R treats a single row or column of a matrix as a vector.
+```{r}
+A[1,]
+```
+The use of a negative sign - in the index tells R to keep all rows or columns except those indicated in the index.
+```{r}
+A[-c(1,3),]
+```
+The dim() function outputs the number of rows followed by the number of columns of a given matrix.
+```{r}
+dim(A)
+```
+## Now, your challenge
++ Step 1: Add a new chunk by clicking the *Insert Chunk* button on the toolbar.
++ Step 2: Make a vector x that consists of 30 equally spaced values between -1 and 1. 
++ Step 3: Make a vector `y=sin(x)`
++ Step 4: Make a scatter plot of y and x. 
++ Step 5: Change the plotting character to a diamond. 
++ Step 6: Change the color of your dots. 
++ Step 7: Read `help(plot)` about different types of plot specified by `type =`.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button to preview the HTML file).

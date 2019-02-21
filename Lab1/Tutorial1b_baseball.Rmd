@@ -1,0 +1,112 @@
+---
+title: "Basic data operations"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+#### Note:
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+## Baseball salary data
+In this tutorial, we will look at the salary of Major League Baseball (MLB) players. [source from baseballguru.com.](http://baseballguru.com/salary.zip)
+
+First we load R libraries that we need for this tutorial. Basic libraries of functions are loaded every time R starts. More specialized functions need to be loaded first before they can used. 
+```{r}
+library(dplyr)
+library(readr)
+library(DT)
+library(RColorBrewer)
+```
+### Read in the data
+
+
+R can read data from data files such as csv, txt, and output from other softwares such as STATA and SAS. Google for "R load data xx format" should usually point you to the right direction. CSV is usually one of the most widely used format for data nowadays. 
+
+Now let's read in the baseball salary data set. 
+
+```{r}
+BaseballSalary=read_csv(file="./BaseballSalary.csv")
+```
+
+
+```{r}
+datatable(head(BaseballSalary,50), options = list(scrollX=T, pageLength = 8))
+```
+
+### Explore the data with graphs
+```{r, fig.height=8, fig.width=6}
+col.use=brewer.pal(10, "RdYlBu")
+hist.1985=hist(filter(BaseballSalary, year==1985)$salary, 
+               main="salaries in 1985",
+               xlab="annual salary",
+               col=col.use, 
+               nclass = 50)
+hist(filter(BaseballSalary, year==2004)$salary, 
+     main="salaries in 2004",
+     xlab="annual salary",
+     col=col.use, 
+     nclass = 50)
+par(mfrow=c(2,1))
+hist.1985=hist(filter(BaseballSalary, year==1985)$salary, 
+               main="salaries in 1985",
+               xlab="annual salary",
+               col=col.use, 
+               nclass = 50,
+               ylim=c(0, 250))
+hist(filter(BaseballSalary, year==2004)$salary, 
+     col=col.use,
+     breaks=c(hist.1985$breaks, max(BaseballSalary$salary)),
+     main="salaries in 2004",
+     xlab="annual salary",
+     xlim=c(0, 2000000), 
+     ylim=c(0,250),
+     freq=T)
+```
+
+
+Change the plot aspect ratio.
+```{r, fig.height=4, fig.width=6}
+par(mfrow=c(1,1))
+plot(salary~as.factor(year), data=BaseballSalary, col=col.use)
+```
+
+What happened from 1994 to 1995? [Answer](https://en.wikipedia.org/wiki/1994%E2%80%9395_Major_League_Baseball_strike)
+
+## The `dplyr` package
+Dplyr aims to provide a function for each basic verb of data manipulation.
+
+- `filter()`
+- `arrange()`
+- `select()`
+- `distinct()`
+- `mutate()`
+- `summarise()`
+- `sample_n()` and `sample_frac()`
+- `group_by`
+
+### Compute some team summary statistics.
+```{r}
+BSTeamYear=BaseballSalary%>%
+          group_by(teamID, year)%>%
+          summarize(
+            count=n(),
+            total=sum(salary),
+            median=median(salary),
+            min=min(salary),
+            max=max(salary),
+            q1=quantile(salary, .25),
+            q3=quantile(salary, .75)
+          )
+BSTeamYear=as.data.frame(BSTeamYear)
+sample_n(BSTeamYear, 10)
+```
+
+### Visualize team compensation trends in 2004.
+```{r, fig.height=3, fig.width=6}
+datatable(filter(BSTeamYear, year==2004), options = list(scrollX=T, pageLength = 10))
+BS2004=filter(BaseballSalary, year==2004)
+plot(as.factor(BS2004$teamID), BS2004$salary, col=col.use, las=2)
+BS2004[which.max(BS2004$salary),]
+```
+
