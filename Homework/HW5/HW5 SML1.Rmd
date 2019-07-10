@@ -1,0 +1,88 @@
+---
+title: "HW5 SML1"
+author: "Jie Li jl5246"
+date: "April 17, 2019"
+output: html_document
+---
+
+### Problem 1
+#### Ridge Regression
+
+$$ \min_{\beta} \|y-\hat{y}\|^2+\lambda\|\beta^2 \| \implies \min_{\beta} \sum_i^n{(y_i-\sum_j^p{\beta_j*x_{ij}})^2} +\lambda\sum_j^p{\beta_j^2}$$
+
+$$\hat{\beta}_{ridge} = (X^TX + \lambda I)^{-1}X^TY$$
+
+The designed matrix in our setting: $\lambda = 0.01$
+
+$$\mathbf{X} = \left[\begin{array}
+{rrr}
+1 & 1 \\
+-1 & -1 \\
+\end{array}\right]
+$$
+
+$$\mathbf{Y} = \left[\begin{array}
+{rrr}
+1 \\
+-1 \\
+\end{array}\right]
+$$
+
+$$\mathbf{X^TX} = \left[\begin{array}
+{rrr}
+2 & 2 \\
+2 & 2 \\
+\end{array}\right]
+$$
+
+$$\hat{\beta} = (\left[\begin{array}
+{rrr}
+2 & 2 \\
+2 & 2 \\
+\end{array}\right] +
+\left[\begin{array}
+{rrr}
+1.01 & 0 \\
+0 & 1.01 \\
+\end{array}\right])^{-1}
+\left[\begin{array}
+{rrr}
+1 & 1 \\
+-1 & -1 \\
+\end{array}\right]^T
+\left[\begin{array}
+{rrr}
+1 \\
+-1 \\
+\end{array}\right] = \left[\begin{array}
+{rrr}
+0.4988 \\
+0.4988 \\
+\end{array}\right]
+$$
+
+#### Lasso Regression
+
+$$ \min_{\beta} \|y-\hat{y}\|^2+\lambda\|\beta \| \implies \min_{\beta} \sum_i^n{(y_i-\sum_j^p{\beta_j*x_{ij}})^2} +\lambda\sum_j^p{|\beta_j|}$$
+
+$$\frac{\partial L(\beta, \lambda)}{\partial \beta} = 0 \pm \lambda = 0$$
+
+Therefore, since the function does not depended on $\beta$, the lasso coeficients $\hat{\beta_1}$ and $\hat{\beta_2}$ are not unique.
+
+### Problem 2
+![Caption for the picture.](C:/Users/jay48/OneDrive/Documents/work/Statistical ML/HW5/hw5.png)
+
+
+### Problem 3
+```{r, echo=F}
+data = c(0.1, 0.15, 0.2, 0.2, 0.55, 0.6, 0.6, 0.65, 0.7, 0.75)
+names(data) = ifelse(data>0.5, "R", "G")
+data
+
+p = mean(data)
+```
+
+For majority vote approach, `Red` has 6 votes, but `Green` has only 4, so it will be classified as `Red`
+
+For average probability approach, P(Red|X) = `r p`, so it will be classified as `Green`
+

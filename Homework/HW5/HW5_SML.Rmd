@@ -1,0 +1,179 @@
+---
+title: "HW5 SML"
+author: "Jie Li"
+date: "April 14, 2019"
+output: html_document
+---
+
+```{r}
+library(rpart)
+library(purrr)
+library(reshape2)
+library(ggplot2)
+setwd("C:/Users/jay48/OneDrive/Documents/work/Statistical ML/HW5")
+```
+
+implementing `Training`
+```{r}
+train = function(x, w, y)
+{
+  # Assume: Decision Stump is finding the best feature split, y = {-1, 1}
+  w = as.matrix(w)
+  
+  cost.mat = matrix(NA, 1200, 256)
+  cost.opt = 10
+  
+  for(j in 1:dim(x)[2])
+  {
+    if(!is.factor(x[,j]))
+    {
+      for(i in 1:dim(x)[1])
+      {
+        yhat = 2*(x[,j] > x[i,j]) - 1
+        cost = t(w) %*% (y != yhat) / sum(w)
+        #cost.mat[i,j] = cost
+        if(cost < cost.opt)
+        {
+          cost.opt = cost
+          j.opt = j
+          theta.opt = x[i,j]
+        }
+      }
+    }
+    else stop("Input design matrix is valid")
+  }
+  return(list(j = j.opt, theta = theta.opt, m = 1)) 
+}
+```
+
+implementing `Classify`
+```{r}
+classify = function(x, par)
+{
+  yhat = 2*(x[, par$j] > par$theta) - 1
+  return(yhat)
+}
+```
+
+implementing `AdaBoost`
+```{r}
+AdaBoost = function(x, y, T)
+{
+  par.all = matrix(list())
+  alpha = c()
+  
+  n = dim(x)[1]
+  w = rep(1/n, n)
+  
+  for(i in 1:T)
+  {
+    par = train(x,w,y)
+    label = classify(x, par)
+    error = w %*% (y != label) / sum(w)
+    alpha[i] = as.numeric(log((1-error)/error))
+    w = w*exp(alpha[i] * (y != label)) 
+    par.all[[i]] = par
+  }
+  return(list(alpha = alpha, allPars = par.all))
+}
+```
+
+implementing `Agg_class`
+```{r}
+agg_class = function(x, model, T)
+{
+  alpha = model$alpha
+  par.all = model$allPars
+  
+  yhat = 0
+  for(i in 1:T)
+  {
+    yhat = yhat + alpha[i] * classify(x, par.all[[i]])
+  }
+  return(ifelse(yhat >0, 1, -1))
+}
+```
+
+Loading training and testing data
+```{r}
+# Read all images corresponding to digit "3"
+zip.3 = read.table("./train_3.txt", header = FALSE, sep = ",") 
+zip.3 = cbind(zip.3, y=rep(-1, 658)) %>% data.frame()
+
+# Read all images corresponding to digit "8"
+zip.8 = read.table("./train_8.txt", header = FALSE, sep = ",")
+zip.8 = as.matrix(cbind(zip.8, y=rep(1, 542)))
+
+# Combine training set
+data = data.frame(rbind(zip.3, zip.8))
+data_x = data[, -257]
+data_y = data[, 257]
+
+# Read testing dataset
+test = read.table("./zip_test.txt", header = F, sep = " ")
+test = test[test[,1] %in% c(3,8), 1:257]
+test_x = test[, 2:257]
+test_y = ifelse(test[,1] == "3", -1, 1)
+
+```
+
+implementing `Cross Validation` process to tune num of trees
+```{r}
+Sys.time()
+T = 15
+index = sample(1:5, dim(data)[1], TRUE)
+cv.error = matrix(NA, 5, T)
+
+for(i in 1:5)
+{
+  training_x = data[index != i, -257]
+  training_y = data[index != i, 257]
+  
+  validation_x = data[index == i, -257]
+  validation_y = data[index == i, 257]
+  
+  n = dim(training_x)[1]
+  w = rep(1/n, n)
+    
+  for(t in 1:T)
+  {
+    model = AdaBoost(training_x, training_y, t)
+    result = agg_class(validation_x, model, t)
+    cv.error[i,t] = sum(validation_y != result)/length(validation_y)
+  }
+}
+
+avg.cv.error = apply(cv.error, 2, mean)
+avg.cv.error
+Sys.time()
+```
+
+Choose the optimal num of trees, re-train the model with whole training data, and predict in test set 
+```{r}
+train.error = c()
+test.error = c()
+
+T.opt = which.min(avg.cv.error)
+
+for(t in 1:T.opt)
+{
+  model = AdaBoost(data_x, data_y, t)
+  result = agg_class(data_x, model, t)
+  train.error[t] = sum(data_y != result)/length(data_y)
+  
+  pred = agg_class(test_x, model, t)
+  test.error[t] = sum(test_y != pred)/length(test_y)
+}
+
+data.frame(index = 1:15, Train = train.error, Cross.valid = avg.cv.error, Test = test.error) %>% melt("index") %>%
+  ggplot()+
+  geom_line(aes(index, value, col = variable), size = 1)+
+  scale_x_continuous("Num of Trees", breaks=1:15, limits=c(0,15))+
+  ylab("Error")+
+  theme_classic(14)
+  
+
+```
+
+
+

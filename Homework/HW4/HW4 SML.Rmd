@@ -1,0 +1,199 @@
+---
+title: "HW4 SML"
+author: "Jie Li jl5246"
+date: "March 24, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=F, echo=F}
+library(leaps)
+library(ggplot2)
+library(purrr)
+library(reshape2)
+library(e1071)
+```
+
+
+### Problem 1 Kernelized Nearest Neighbor Classification
+#### 1
+$$d^2(x, x') = ||x-x'||_2^2 = <(x-x'), (x-x')> = <x,x> - 2<x,x'> + <x',x'>$$
+
+#### 2
+$$d_k^2(x, x') = <\phi(x),\phi(x)> - 2<\phi(x),\phi(x')> + <\phi(x'),\phi(x')>$$
+
+#### 3
+d_k^2(x, x') is itself a distance measure that map data $X$ into high-dimension feature space by `kernel` function and calculate the distances between data points $X$ in that space. 
+
+### Problem 2 Subset Selection Methods
+First of all, take a look our `Credit` dataset
+
+```{r}
+data = read.csv("./Credit.csv")
+head(data)
+```
+
+Using `Regsubsets` function to ientify the best model, which minimizes the residual sum-of-squares (RSS).
+```{r}
+model.set = regsubsets(Balance ~ Income + Limit + Rating + Cards + Age + Education + I(Gender) + I(Student) + I(Ethnicity) + I(Married), data)
+summary(model.set)
+```
+
+Performing `forward stepwise selection`
+```{r}
+model.foward = regsubsets(Balance ~ Income + Limit + Rating + Cards + Age + Education + I(Gender) + I(Student) + I(Ethnicity) + I(Married), data, method = "forward")
+summary(model.foward)
+```
+
+Performing `backward stepwise selection`
+```{r}
+model.backward = regsubsets(Balance ~ Income + Limit + Rating + Cards + Age + Education + I(Gender) + I(Student) + I(Ethnicity) + I(Married), data, method = "backward")
+summary(model.backward)
+```
+
+#### 1
+```{r}
+RSS.df = data.frame(n = 1:8, best = summary(model.set)$rss, forward = summary(model.foward)$rss, backwward = summary(model.backward)$rss)
+
+RSS.df %>% melt(id.var = "n") %>%
+ggplot()+
+  geom_line(aes(n, value, col = variable))+
+  xlab("num of predictors")+
+  ylab("RSS")+
+  ggtitle("Compare three subset selection methods")+
+  theme_bw()
+```
+
+#### 2
+Each subset selection method results in a set of models. For each approach, choose a single optimal model
+by using Cp and BIC statistics respectively.
+
+```{r}
+cat("The lowest Cp and BIC in the Best subset selection: ", min(summary(model.set)$cp), min(summary(model.set)$bic), "\n")
+
+cat("The lowest Cp and BIC in the foward subset selection: ", min(summary(model.foward)$cp), min(summary(model.foward)$bic), "\n")
+
+cat("The lowest Cp and BIC in the backward subset selection: ", min(summary(model.backward)$cp), min(summary(model.backward)$bic), "\n")
+```
+
+I am going to choose `BIC` statistcs from the `Best subset selection` because it provides the lowest and simplest model.
+```{r}
+cat("Following is the given number of predictors \n")
+summary(model.set)$outmat[which.min(summary(model.set)$bic),]
+```
+
+
+### Problem 3 SVM
+Loading the data set
+```{r}
+### all images corresponding to digit "5"
+zip.5 = read.table("train.5-1.txt", header = FALSE, sep = ",")
+zip.5 = cbind(zip.5, y=rep(-1, dim(zip.5)[1])) %>% data.frame()
+
+### all images corresponding to digit "6"
+zip.6 = read.table("train.6.txt", header = FALSE, sep = ",")
+zip.6 = cbind(zip.6, y=rep(1, dim(zip.6)[1])) %>% data.frame()
+
+### combine two data sets together 
+data = rbind(zip.5, zip.6)
+
+# function of visualizing the image
+output.image = function(data)
+{
+  # Transfer dataframe to vector then convert to matrix 
+	digit = matrix(as.numeric(data), nrow = 16, ncol = 16)
+	
+	# Set index backwards
+	index = seq(from = 16, to  = 1, by = -1)
+	sym_digit = digit[,index]
+	image(sym_digit, col = gray((8:0)/8), axes = FALSE)
+}
+```
+
+Visualizing the part of dataset
+```{r}
+# Visualize digital 5
+par(mfrow = c(5,5),mai = c(0.1,0.1,0.1,0.1))
+for(i in 1:25)
+{
+	output.image(zip.5[i,-257])
+}
+
+# Visualize digital 6
+par(mfrow = c(5,5),mai = c(0.1,0.1,0.1,0.1))
+for(i in 1:25)
+{
+	output.image(zip.6[i,-257])
+}
+```
+
+Spliting train and test set, repectively 80-20
+```{r}
+set.seed(123)
+index = sample(1:dim(data)[1], dim(data)[1]*0.2)
+test = data[index,]
+train = data[-index,]
+
+cat("Dimension of Training set: ", dim(train), "\n")
+cat("Dimension of Test set: ", dim(test))
+```
+
+Training linear SVM, and tuning hyperparameters by 10-fold cross validation
+```{r}
+cost = seq(0.001,0.5, 0.005)
+mis.rate = c()
+
+for(i in cost)
+{
+  model1 = svm(y ~., train, type = "C-classification", kernel = "linear", cost = i, cross = 10)
+  mis.rate = c(mis.rate, 1-summary(model1)$"tot.accuracy"/100)
+}
+
+ggplot()+
+  geom_line(aes(cost, mis.rate), size = 0.5)+
+  ylab("Misclassification Rate")+
+  ggtitle("Tuning Cost Hyperparameters")+
+  theme_bw()
+
+cat("The best hyperparameter of cost is:", cost[which.min(mis.rate)])
+```
+
+Using the optimal parameters to refit SVM, and calcating misclassification rate
+```{r}
+model1.tune = svm(y ~., train, type = "C-classification", kernel = "linear", cost = 0.001)
+summary(model1.tune)
+
+y.pred = predict(model1.tune, test)
+cat("The misclassification rate on the test set:", mean(test$y != y.pred))
+```
+
+Training `RBF` kernel SVM, and tuning hyperparameters by 10-fold cross validation
+```{r}
+cost = seq(1,10,1)
+gamma = c(10^(-1:-4))
+
+svm_tune = tune.svm(y ~., data = train, kernel="radial", scale=F, cost = cost, gamma = gamma)
+
+plot(svm_tune)
+summary(svm_tune)
+
+cat("The best hyperparameter of cost =", svm_tune$best.parameters[1,1], "Gamma = ", svm_tune$best.parameters[1,2])
+```
+
+Using the optimal parameters to refit SVM, and calcating misclassification rate
+```{r}
+model.tune = svm(y ~., train, type = "C-classification", kernel = "radial", cost = 2, gamma = 0.01)
+summary(model.tune)
+
+y.pred = predict(model.tune, test)
+cat("The misclassification rate on the test set: ", mean(test$y != y.pred))
+```
+
+For conclusion, the `RBF` kernel SVM has better performance on the test set, which misclassification rate is 0.0123. And the hpyerparameter I selected is $Cost = 2, Gamma = 0.01$
+
+
+
+
