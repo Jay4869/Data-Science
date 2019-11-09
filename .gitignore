@@ -1,3 +1,6 @@
+# Large Data File
+game_logs.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
