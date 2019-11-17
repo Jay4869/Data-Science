@@ -4,13 +4,13 @@
 
 **Data Manipulation Language** (DML) is used for adding, deleting, and modifying data in a database.
 
-SELECT column_name(s)
-FROM table_name
-JOIN table2 on keys
-WHERE condition
-GROUP BY column_name(s)
-HAVING condition
-ORDER BY column_name(s)
+SELECT column_name(s)\
+FROM table_name\
+JOIN table2 on keys\
+WHERE condition\
+GROUP BY column_name(s)\
+HAVING condition\
+ORDER BY column_name(s)\
 LIMITS
 
 ### Primary Key
