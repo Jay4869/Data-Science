@@ -122,7 +122,7 @@ Construct a optimal hyperplane such that maximize the distance (margin) to the c
 $P(y_i|x) = \frac{e^x}{\sum_i^n e^x}$
 
 
-
+<end>
 
 
 
