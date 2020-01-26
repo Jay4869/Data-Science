@@ -1,0 +1,228 @@
+Machine Learning: What it is and why it matters | SAS
+Edit Profile Log Out Worldwide Sites
+Albania
+Argentina
+Australia
+Austria
+Belgium
+Bosnia & Herz.
+Brazil
+Canada
+Chile
+China
+Colombia
+Croatia
+Czech Republic
+Denmark
+Finland
+France
+Germany
+Greece
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Ireland
+Italy
+Japan
+Korea
+Luxembourg
+Macedonia
+Malaysia
+Mexico
+Middle East
+Montenegro
+Morocco
+Netherlands
+New Zealand
+Norway
+Peru
+Philippines
+Poland
+Portugal
+Romania
+Russia / CIS
+Saudi Arabia
+Serbia
+Singapore
+Slovakia
+Slovenia
+South Africa
+Spain
+Sweden
+Switzerland
+Taiwan
+Thailand
+Turkey
+Ukraine
+United Kingdom
+United States Worldwide Contacts Worldwide Contacts Contact Us Solutions Solutions
+Advanced Analytics
+Business Intelligence & Analytics
+Cloud Analytics
+Customer Intelligence
+Data Management
+Decision Management
+Fraud & Security Intelligence
+Personal Data Protection
+Risk Management
+Solutions for Hadoop
+Small & Midsize Business
+Supply Chain Intelligence Products Products
+SAS/STAT
+SAS Analytics Pro
+SAS Customer Intelligence 360
+SAS Data Management
+SAS Enterprise Miner
+SAS Grid Manager
+SAS Visual Analytics
+SAS Visual Statistics
+Curriculum Pathways
+Foundation Tools
+Software Trials
+View All Products Why SAS Why SAS
+Analytics Leadership & Innovation
+The SAS Platform
+World-Class Services
+Analyst Validation
+Academic Commitment
+Global Humanitarian Impact Get details Get details Cloud-based intelligence analytics that is both powerful and easy to use. Get product details Get product details Industries
+Automotive
+Banking
+Capital Markets
+Casinos
+Communications
+Consumer Goods
+Defense & Security
+Government
+Health Care
+Health Insurance
+High-Tech Manufacturing
+Higher Education
+Hotels
+Insurance
+Life Sciences
+Manufacturing
+Media
+Oil & Gas
+P-12 Education
+Retail
+Small & Midsize Business
+Sports
+Travel & Transportation
+Utilities Get more details Get more details Watch the video Watch the video Support Support Knowledge Base Knowledge Base
+Installation Notes
+Problem Notes
+Usage Notes
+Samples
+Graphic Samples
+DATA Step Samples Support by Product Support by Product
+SAS Studio
+SAS Enterprise Guide
+Base SAS
+SAS Visual Analytics
+SAS/STAT
+SAS Enterprise Miner SAS Services SAS Services Downloads & Hot Fixes Downloads & Hot Fixes SAS Administrators SAS Administrators Manage Your Tracks Manage Your Tracks Product Resources Product Resources
+Install Center
+Third-Party Software Reference
+System Requirements
+Security Bulletins
+Focus Areas
+License Assistance Get help Get help Read documentation Read documentation Learn Learn Training Training
+Free Tutorials
+Find a Course
+Get Started with SAS
+Locations
+e-Learning
+Live Web Classes
+SAS Academy for Data Science
+SAS Learning Subscription
+Ask the Expert Certification Certification
+Why Get Certified?
+Base Programmer
+Advanced Programmer
+Data Scientist
+Statistical Business Analyst
+More Credentials Books Books
+Getting Started Books
+SAS Certification Books
+Shop All Books For Students and Educators For Students and Educators
+For Students
+For Educators
+For Independent Learners
+Free Academic Software
+Academic Discounts
+Free e-Learning Documentation Documentation Focus Areas Focus Areas Resource Center Resource Center Find a Partner Find a Partner Become a Partner Become a Partner Sign in to PartnerNet Sign in to PartnerNet Get training, marketing and membership resources for current partners. Platinum Partners Platinum Partners Connect Connect Blogs (blogs.sas.com) Blogs (blogs.sas.com)
+Data for Good posts
+Customer Intelligence posts
+Internet of Things posts
+Machine Learning posts
+Programming Tips posts
+Advanced Analytics posts
+Data Management posts Communities (communities.sas.com) Communities (communities.sas.com)
+Administration & Deployment
+Data Management
+ODS & Base Reporting
+SAS Analytics U
+SAS Data Mining
+SAS Enterprise Guide
+SAS Procedures
+SAS Visual Analytics Get the recognition you deserve. Read about program Read about program View users groups View users groups About SAS About SAS
+Company History
+Company Statistics
+Corporate Social Responsibility
+Leadership
+Security Assurance
+Careers Careers
+Job Openings
+Life at SAS
+Students & Graduates News Room News Room
+Press Releases
+Media Coverage
+Newsletters
+Awards
+Analyst Viewpoints Customer Stories Customer Stories
+Banking Stories
+Government Stories
+Health Care Stories
+Retail Stories
+All Customer Stories Office Information Office Information
+Office Listings
+Map of World Headquarters
+Contact Us Events Events
+Analytics Experience
+SAS Global Forum
+Webinars View Now View Now Download now Download now Machine Learning What it is and why it matters Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that machines should be able to learn and adapt through experience. Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that machines should be able to learn and adapt through experience. Importance Importance                         Who Uses It Who Uses It             Evolution of machine learning While many machine learning algorithms have been around for a long time, the ability to automatically apply complex mathematical calculations to big data – over and over, faster and faster – is a recent development. Here are a few widely publicized examples of machine learning applications you may be familiar with: The heavily hyped, self-driving Google car? The essence of machine learning. Online recommendation offers such as those from Amazon and Netflix? Machine learning applications for everyday life. Knowing what customers are saying about you on Twitter? Machine learning combined with linguistic rule creation.   Why is machine learning important? What's required to create good machine learning systems? Data preparation capabilities. Algorithms – basic and advanced. Automation and iterative processes. Scalability. Ensemble modeling. Did you know? In machine learning, a target is called a label. In statistics, a target is called a dependent variable. A variable in statistics is called a feature in machine learning. A transformation in statistics is called feature creation in machine learning. Machine learning in today's world Machine learning in today's world By using algorithms to build models that uncover connections, organizations can make better decisions without human intervention. Learn more about the technologies that are shaping the world we live in.     Read summary Read summary How can machine learning make credit scoring more efficient? Find out credit scoring agencies can use it to evaluate consumer activity to provide better results for creditors.  View article View article Read summary Read summary Who's using it? Who's using it? Learn More About Industries Using This Technology Automotive Banking Capital Markets Casinos Communications Consumer Goods Defense & Security Government Health Care Health Insurance High-Tech Manufacturing Higher Education Hotels Insurance Life Sciences Manufacturing Media Midsize Business Oil & Gas P-12 Education Retail Analytics Sports Analytics Travel & Transportation Utilities   Using pattern recognition What are some popular machine learning methods? What are the differences between data mining, machine learning and deep learning? Data mining can be considered a superset of many different methods to extract insights from data. It might involve traditional statistical methods and machine learning. Data mining applies methods from many different areas to identify previously unknown patterns from data. This can include statistical algorithms, machine learning, text analytics, time series analysis and other areas of analytics. Data mining also includes the study and practice of data storage and data manipulation.   The main difference with machine learning is that just like statistical models, the goal is to understand the structure of the data – fit theoretical distributions to the data that are well understood. So, with statistical models there is a theory behind the model that is mathematically proven, but this requires that data meets certain strong assumptions too. Machine learning has developed based on the ability to use computers to probe the data for structure, even if we do not have a theory of what that structure looks like. The test for a machine learning model is a validation error on new data, not a theoretical test that proves a null hypothesis. Because machine learning often uses an iterative approach to learn from data, the learning can be easily automated. Passes are run through the data until a robust pattern is found.
+Using big data to predict suicide risk among Canadian youth Suicide is the second leading cause of death among youth in Canada. Here's how big data and analytics can be used to help identify at-risk teens.
+Supporting indigenous communities with analytics Though indigenous women are a small part of Canada's population, they account for a disproportionately large number of Canada's murder victims. Now, big data and analytics are being used to help improve outcomes.
+Machine learning for beginners and beyond Whether you’re an experienced data scientist or a machine learning beginner, you’ll appreciate these 10 tips for getting started with machine learning.
+What is omnichannel analytics? Omnichannel analytics used to mean recognizing and marketing to customers across all channels. Now, smart retailers know it can, and must, mean so much more. Getting Started with SAS Getting Started with SAS
+Contact Us & General Questions
+Pricing, Licensing & Price Requests
+Request a Sales Demo
+Free Software Trials
+Training Resources
+Free How-To Tutorials
+Student & Educator Resources Customer Support Customer Support
+Accessibility
+Certification
+SAS Notes & Samples
+Documentation
+SAS Books
+Training
+User Groups Insights & Trends Insights & Trends
+Analytics
+Big Data
+Business Intelligence
+Data Management
+Fraud & Security
+Marketing
+Risk Management Quick Links Quick Links
+Blogs
+Careers
+Customer Stories
+Events
+Webinars
+White Papers
+Videos

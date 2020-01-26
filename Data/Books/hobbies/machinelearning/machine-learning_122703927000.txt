@@ -1,0 +1,133 @@
+What is machine learning? - Definition from WhatIs.com
+WhatIs.com Browse Definitions: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z # Login Register Techtarget Network File Extensions Writing For Business RSS WhatIs .com Browse Definitions
+Programming
+AppDev
+Agile, Scrum, XP
+Apple
+DevOps
+Internet applications
+Java
+Linux
+Microsoft
+Open source
+Operating systems
+Software applications
+Software development
+Web services, SOA
+AppDev
+Agile, Scrum, XP
+Apple
+DevOps
+Internet applications
+Java
+Linux
+Microsoft
+Open source
+Operating systems
+Programming
+Software applications
+Software development
+Web services, SOA
+Business software
+Amazon Cloud Services
+Google - Android
+Microsoft - Windows
+Open Source
+Oracle
+Salesforce
+SAP
+VMware
+Computer Science
+Computing fundamentals
+Electronics
+Fast references
+IT standards and organizations
+Learning guides
+Mathematics
+Microprocessors
+Nanotechnology
+Podcasts
+Protocols
+Quizzes
+Robotics
+Video Production
+Consumer Tech
+Desktop PCs
+Internet acronyms and lingo
+Internet technologies
+Multimedia and graphics
+Peripherals
+Personal computing
+Printers
+Wireless and mobile
+Data Center
+Cloud computing
+Converged infrastructure
+Data center management
+Disaster recovery
+Hardware
+IT Operations
+Storage hardware
+Virtualization
+IT Management
+ERP
+Business software
+Compliance
+CRM
+Government IT
+Healthcare IT
+HR management
+IT procurement
+Network administration
+Project management
+Security management
+SEO
+Software management
+Storage management
+Networking
+Circuit switched services equipment and providers
+Data transmission
+Email and messaging
+High-speed networks
+Internet of Things
+LANs
+Network hardware
+Network software
+Networking and communications
+Routing and switching
+Smart grid
+Telecom
+VoIP
+Wireless LANs
+Wireless technologies
+Security
+Application security
+Authentication
+Malware
+Network security
+Security threats and countermeasures
+Spyware
+Storage and Data Mgmt
+Backup and recovery
+Business intelligence - business analytics
+Content management
+Customer data management
+Data and data management
+Data deduplication
+Database
+NAS
+Solid state storage
+SAN
+AppDev
+Business software
+Computer Science
+Consumer Tech
+Data Center
+IT Management
+Networking
+Security
+Storage and Data Mgmt Quick Study Resources Buyer's Guides Cheat Sheets Learning Guides Quizzes Technology-specific sites Follow: Home Topics AppDev Programming machine learning
+Definition machine learning
+Share this item with your network: Apple Push Notification service (APNs) is a cloud service that allows approved third-party apps installed on Apple devices to send push notifications from a remote server to users over a secure connection. Apple Push Notification service (APNs) General Data Protection Regulation (GDPR) content marketing natural language processing (NLP) Bayesian statistics insider threat air gapping (air gap attack) ransomware on-demand computing digital economy key performance indicators (KPIs) enterprise content management (ECM) internet meme application containerization (app containerization) backfire effect statistical noise platform cooperative weaponized information cognitive hacking cognitive security Download this free guide Download: An enterprise guide to big data in cloud computing Download the PDF version of this essential guide "An enterprise guide to big data in cloud computing" You forgot to provide an Email Address. This email address doesn’t appear to be valid. You have exceeded the maximum character limit. Please provide a Corporate E-mail Address. The processes involved in machine learning are similar to that of   and  .          A physician-programmer experiments with AI and machine learning in the ER Machine learning applications: Mitigating the risks Machine learning algorithms set to transform industries Machine learning tools pose educational challenges for users Machine-Learning Maestro Michael Jordan on the Delusions of Big Data and Other Huge Engineering Efforts 2 No problem! Submit your e-mail address below. We'll send you an email containing your password. AnonymousUser
+- 23 Oct 2016 9:22 PM iamrizwan
+- 24 Jun 2017 3:56 PM -ADS BY GOOGLE File Extensions and File Formats A B C D E F G H I J K L M N O P Q R S T U V W X Y Z # Powered by: resources Search Compliance pure risk (absolute risk) Pure risk, also called absolute risk, is a category of threat that is beyond human control and has only one possible outcome if ... risk assessment Risk assessment is the identification of hazards that could negatively impact an organization's ability to conduct business. audit program (audit plan) An audit program, also called an audit plan, is an action plan that documents what procedures an auditor will follow to validate ... Search Security insider threat Insider threat is a generic term for a threat to an organization's security or data that comes from within. ransomware Ransomware is a subset of malware in which the data on a victim's computer is locked, typically by encryption, and payment is ... hacker A hacker is an individual who uses computer, networking or other skills to overcome a technical problem. Search Health IT PACS (picture archiving and communication system) PACS, or picture archiving and communication system, is a medical imaging technology used for storing, retrieving, presenting and... MACRA (Medicare Access and CHIP Reauthorization Act of 2015) MACRA (Medicare Access and CHIP Reauthorization Act of 2015) is U.S. healthcare legislation that provides a new framework for ... Allscripts Allscripts is a vendor of electronic health record systems for physician practices, hospitals and healthcare systems. Search Disaster Recovery business continuity and disaster recovery (BCDR) Business continuity and disaster recovery (BCDR) are closely related practices that describe an organization's preparation for ... business continuity plan (BCP) A business continuity plan (BCP) is a document that consists of the critical information an organization needs to continue ... call tree A call tree -- sometimes referred to as a phone tree -- is a telecommunications chain for notifying specific individuals of an ... Search Storage DIMM (dual in-line memory module) A DIMM (dual in-line memory module) is the standard memory card used in servers and PCs. nearline storage Nearline storage is the on-site storage of data on removable media. application-aware storage Application-aware storage is a storage system with built-in intelligence about relevant applications and their utilization ... Search Solid State Storage 3D XPoint 3D XPoint is memory storage technology jointly developed by Intel and Micron Technology Inc. RRAM or ReRAM (resistive RAM) RRAM or ReRAM (resistive random access memory) is a form of nonvolatile storage that operates by changing the resistance of a ... JEDEC JEDEC is a global industry group that develops open standards for microelectronics. Search Cloud Storage Google Cloud Storage Google Cloud Storage is an enterprise public cloud storage platform that can house large unstructured data sets. RESTful API A RESTful application program interface breaks down a transaction to create a series of small modules, each of which addresses an... cloud storage infrastructure Cloud storage infrastructure is the hardware and software framework that supports the computing requirements of a private or ... Browse by Topic Browse Resources File Extensions About Us Contact Us Overview Privacy Policy Advertisers Business Partners Events Media Kit Corporate Site Reprints Site Map Archive

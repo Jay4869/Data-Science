@@ -1,0 +1,52 @@
+Machine Learning - Quora
+Submit any pending changes before refreshing this page. Quora Machine Learning Machine Learning Machine Learning Read Read Answer Topic FAQ Most Viewed Writers Feed More Stories
+·
+·
+Machine Learning Machine Learning Machine Learning
+·
+53w ago 53w ago Which deep learning framework do you prefer? Which deep learning framework do you prefer? Andrej Karpathy , Machine Learning PhD student at Stanford 53w ago
+·
+Zeeshan Zia PhD in Computer Vision and Machine Learning
+and
+Nikhil Badugu M.S Computer Science & Machine Learning, Northeastern University In my PhD I went through several transitions. I started out with Matlab, which is what everyone used at the time. Unfortunately, Matlab is not a real language and everyone serious laughed at me, so... In my PhD I went through several transitions. I started out with Matlab, which is what everyone used at the time. Unfortunately, Matlab is not a real language and everyone serious laughed at me, so... (more)
+·
+·
+Machine Learning Machine Learning Machine Learning
+·
+84w ago 84w ago What triggered Andrew Ng's desire to learn artificial intelligence? What triggered Andrew Ng's desire to learn artificial intelligence?     Andrew Ng , Co-founder of Coursera; Adjunct Professor of Stanford 84w ago
+·
+Nikhil Badugu M.S Computer Science & Machine Learning, Northeastern University
+and
+Niko Gamulin PhD from the field of Machine Learning I want us to build a better society using AI.
+Just as the industrial revolution relieved humanity of a lot of physical drudgery (what would your life be like if you had to sew your own clothes?), i... (more)
+·
+·
+Machine Learning Machine Learning Machine Learning
+·
+57w ago 57w ago Is AI/ML all about mathematics? If you take out the infrastructure required to handle computation, I find AI to be mostly computational maths. Do things like greedy algorithms, sorting and other cool CS things get applied here? Is AI/ML all about mathematics? If you take out the infrastructure required to handle computation, I find AI to be mostly computational maths. Do things like greedy algorithms, sorting and other cool CS things get applied here? Roman Trusov , Facebook AI Research Intern 2016 57w ago
+·
+Jessica Su CS PhD student at Stanford
+and
+Alon Amit CS degree and many years of coding. When I got into ML, I thought that it will be really easy, just to learn about the use cases for every algorithm, optimization methods and that’s it. That was really dumb of me. My biggest regret is ... (more)
+·
+·
+Machine Learning Machine Learning Machine Learning
+·
+18w ago 18w ago How does a total beginner start to learn machine learning if they have some knowledge of programming languages? How does a total beginner start to learn machine learning if they have some knowledge of programming languages? Rohit Malshe , Chem Engineer, Programmer, Author, Thinker, Amazon engineer 17w ago
+·
+Falguni Jhaveri Master of Science Computer Science, The University of Texas at Dallas
+and
+Nikhil Badugu M.S Computer Science & Machine Learning, Northeastern University If you are a total beginner, in short your path should look like this: Learn SQL, and Python. Then learn Machine learning from a couple of basic courses. Learn probability theory, and some computation... (more)
+·
+·
+Machine Learning Machine Learning Machine Learning
+·
+96w ago 96w ago How do I get started in machine learning theory and programming? How do I get started in machine learning theory and programming? Sebastian Raschka , Author of Python Machine Learning, researcher applying ML to computational bio. 96w ago
+·
+Rahul Panicker PhD Electrical Engineering & Machine Learning, Stanford University
+and
+Rahul Bohare M.S. Machine Learning & Robotics, Technical University of Munich (2018) Coursera (more) About Machine learning is the study of computer algorithms that improve automatically through experience and has been central to AI research since the field's inception. Machine learning is the study of computer algorithms that improve automatically through experience and has been central to AI research since the field's inception. Machine learning is the study of computer algorithms that improve automatically through experience and has been central to AI research since the field's inception. Questions Followers Edits Related Topics Artificial Intelligence Deep Learning Artificial Neural Networks Computer Science Data Mining Classification (machine learning) Data Science Natural Language Processing Statistics (academic discipline) Algorithms Computer Vision Mathematics and Machine Learning Big Data Artificial General Intelligence Data Analysis View 11 More A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+·
+·
+·
+·

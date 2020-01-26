@@ -1,0 +1,12 @@
+The 10 Algorithms Machine Learning Engineers Need to Know
+KDnuggets SOFTWARE NEWS Top stories Opinions Tutorials JOBS Companies Courses Datasets EDUCATION Certificates Meetings Webinars
+Read this introductory list of contemporary machine learning algorithms of importance that every engineer should understand.
+It is no doubt that the sub-field of machine learning / artificial intelligence has increasingly gained more popularity in the past couple of years. As Big Data is the hottest trend in the tech industry at the moment, machine learning is incredibly powerful to make predictions or calculated suggestions based on large amounts of data. Some of the most common examples of machine learning are Netflix’s algorithms to make movie suggestions based on movies you have watched in the past or Amazon’s algorithms that recommend books based on books you have bought before. Supervised Learning From a business decision point of view, a decision tree is the minimum number of yes/no questions that one has to ask, to assess the probability of making a correct decision, most of the time. As a method, it allows you to approach the problem in a structured and systematic way to arrive at a logical conclusion. Some of real world examples are: To mark an email as spam or not spam
+Classify a news article about technology, politics, or sports
+Check a piece of text expressing positive emotions, or negative emotions?
+Used for face recognition software.
+Linear refers the kind of model you are using to fit the data, while least squares refers to the kind of error metric you are minimizing over. In general, regressions can be used in real-world applications such as: Credit Scoring
+Measuring the success rates of marketing campaigns
+Predicting the revenues of a certain product
+Is there going to be an earthquake on a particular day?
+In terms of scale, some of the biggest problems that have been solved using SVMs (with suitably modified implementations) are display advertising, human splice site recognition, image-based gender detection, large-scale image classification... Top Stories Past 30 Days Latest News More Recent Stories

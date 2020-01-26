@@ -1,0 +1,49 @@
+Rendezvous Server to the Rescue: Dealing with Machine Learning Logistics -
+NYC Machine Learning (New York, NY)
+| Meetup
+Create a Meetup Log in Sign up NYC Machine Learning Rendezvous Server to the Rescue: Dealing with Machine Learning Logistics Tell a friend Thursday, September 21, 2017 7:00 PM New York NY 40.739159 -73.993233 If you have put machine learning models into production, you’ve lived the truth of the maxim that 90% of what makes machine learning work is the logistics, not the learning. That 90% comes from many things, including the need to stage and deploy multiple versions of each model, to carefully collect and curate updated training data and to monitor model performance. Lately we have added scale, speed and the need to handle multiple machine learning frameworks at the same time to make the problem more difficult.  There is a way to make this easier and more effective – the rendezvous architecture. It makes use of recent advances in streaming micro-services, containerization, and orchestration. It solves many of the problems involved in continuous deployment of machine learning models. In presenting the rendezvous architecture, I’ll cover techniques for model deployment, management, monitoring and comparison. After the talk, we will have an open discussion about where this effort should go from here.  Bio Ted Dunning is Chief Applications Architect at MapR Technologies and a board member for the Apache Software Foundation, as well as PMC member/ committer of the Apache Mahout, Apache Zookeeper and Apache Drill projects and served as mentor for several incubator projects. He has contributed to clustering, classification, matrix decomposition algorithms in Mahout and to the new Mahout Math library. He designed the t-digest algorithm used in several open source projects and by a variety of companies.  Ted was chief architect behind the MusicMatch (now Yahoo Music) and Veoh recommendation systems, built fraud-detection systems for ID Analytics (now LifeLock) and has 24 issued patents to date. Ted has a PhD in computing science from University of Sheffield. He is on Twitter as @ted_dunning. Hit enter to add your reply Guys I want to come it is amazing but i am not able to join this time as it is about 1 and half hour train ride and going back is going to be very late. Is there any webex or online portal where i can join online. Hasan
+Want to go? 250
+ML @Point72
+CTO @ Better. Likes machine learning and data.
+I have worked on NLP projects at NYU (GALE, sentiment mining, people search)
+technology leader. Still useful and interested in ML
+Current ML/AI Masters Degree Student @ Georgia Tech
+Hi Into AI
+Data Eng, sport and music lover
+NYU CS
+NYU CS student.
+deep learning
+Hi, I am new to the city
+Healthcare, operations research, data science... Impact!
+Researcher at eBay
+data science @ Space Jam Data, looking for cool side projects! get in touch.
+Big data enthusiast
+Data Science/Data Eng at New York Times
+data scientist @ shopkeep
+An economist, data scientist and analytics consultant.
+Healthcare analytics at Memorial Sloan Kettering
+noob to NYC love ML worked in the field off and on for last 5 years
+.Net, Haskell and Clojure software developer
+I work with big data sets in ad tech, particularly interested in visualization and machine learning.
+Principal Technologist, MapR. Committer Apache Drill & Apache Mahout, O'Reilly author.
+holler
+Data scientist at Dia&Co
+Data Scientist @ Dia&Co
+Credit Risk Modeller at CBA
+Hi!
+34
+Hi.
+developer
+16
+First year CS grad student. I am interested in learning about ML and its overall implementation­.
+ML enthusiast. Founder, littleSTEM Books.
+You're all set! New York
+NY
+Members 11,122 Group reviews 69 Upcoming Meetups 1 Past Meetups 119 Our calendar
+Help support your Meetup
+× A group to discuss machine learning, information retrieval, natural language processing, knowledge representation, and artificial intelligence. Meetings will cover research papers and algorithms in the field. We'll also try to occasionally bring in a speaker to talk about their work. 4,208 Quants 4,735 Data Scientists 20,315 Entrepreneurs 6,125 Data Scientists 4,188 Data Skeptics 3,765 Dockers Made in NYC
+© 2017 Meetup
+Privacy Terms
+Sign up
+Continue with Facebook Continue with Google Continue with Facebook Continue with Google Continue with Facebook Continue with Google Sign up
+Sign up using Facebook

@@ -1,0 +1,82 @@
+Machine Learning
+Total €239.99 Computer Science Artificial Intelligence Machine Learning Artificial Intelligence Home Choose your discipline: Artificial Intelligence Bioinformatics Communication Networks Database Management & Information Retrieval
+General Issues Hardware HCI
+Image Processing
+Information Systems and Applications
+LNCS Media Design Security and Cryptology Software Engineering Theoretical Computer Science Browse Journals in: Artificial Intelligence Bioinformatics Communication Networks Database Management & Information Retrieval General Issues Hardware HCI Image Processing Information Systems and Applications Security and Cryptology Software Engineering Theoretical Computer Science: Foundations Theoretical Computer Science: Mathematics All journals in Computer Science All journals in Computer Science Browse Books in: Artificial Intelligence Bioinformatics Communication Networks Database Management & Information Retrieval General Issues Hardware HCI Image Processing Information Systems and Applications Media Design Security and Cryptology Software Engineering Theoretical Computer Science: Foundations Theoretical Computer Science: Mathematics LNCS LNCS Browse Textbooks in: Artificial Intelligence Bioinformatics Communication Networks Database Management & Information Retrieval General Issues Hardware HCI Image Processing Information Systems and Applications Media Design Security and Cryptology Software Engineering Theoretical Computer Science: Foundations Theoretical Computer Science: Mathematics LNCS (Lecture Notes in Computer Science) Tutorials All Textbooks in Computer Science Close RSS RSS Reddit Reddit Technorati Technorati Print this site Print this site Delicious Delicious Digg Digg CiteULike CiteULike Machine Learning ISSN:
+0885-6125 ISSN:
+1573-0565 10994 $199.00 Personal Rate e-only for the Americas Online subscription, valid from January through December of current calendar year Immediate access to this year's issues via SpringerLink 1 Volume(-s) with 12 issue(-s) per annual subscription Automatic annual renewal About this journal About this journal About this journal Editorial Board Editorial Board CALL FOR PAPERS (SPECIAL ISSUES) CALL FOR PAPERS (SPECIAL ISSUES) Ethics & Disclosures Ethics & Disclosures
+An international forum for research on computational approaches to learning.
+Reports substantive results on a wide range of learning methods applied to a variety of learning problems.
+Provides solid support via empirical studies, theoretical analysis, or comparison to psychological phenomena.
+Shows how to apply learning methods to solve important applications problems.
+Improves how machine learning research is conducted.
+Machine Learning is an international forum for research on computational approaches to learning. The journal publishes articles reporting substantive results on a wide range of learning methods applied to a variety of learning problems.
+The journal features papers that describe research on problems and methods, applications research, and issues of research methodology. Papers making claims about learning problems or methods provide solid support via empirical studies, theoretical analysis, or comparison to psychological phenomena. Applications papers show how to apply learning methods to solve important applications problems. Research methodology papers improve how machine learning research is conducted.
+All papers describe the supporting evidence in ways that can be verified or replicated by other researchers. The papers also detail the learning component clearly and discuss assumptions regarding knowledge representation and the performance task. Related subjects » Artificial Intelligence
+-
+Control Engineering   Journal Citation Reports®   Science Citation Index, Science Citation Index Expanded (SciSearch), Journal Citation Reports/Science Edition, SCOPUS, PsycINFO, INSPEC, Zentralblatt Math, Google Scholar, Academic OneFile, ACM Digital Library, Computer Abstracts International Database, Computer Science Index, CSA Environmental Sciences, Current Contents/Engineering, Computing
+and Technology, DBLP, Earthquake Engineering Abstracts, EBSCO Applied Science & Technology Source, EBSCO Discovery Service, EI-Compendex, Gale, io-port.net, Mathematical Reviews, OCLC, OmniFile, PASCAL, PSYCLINE, Referativnyi Zhurnal (VINITI), Science Select, SCImago, Summon by ProQuest Science Citation Index, Science Citation Index Expanded (SciSearch), Journal Citation Reports/Science Edition, SCOPUS, PsycINFO, INSPEC, Zentralblatt Math, Google Scholar, Academic OneFile, ACM Digital Library, Computer Abstracts International Database, Computer Science Index, CSA Environmental Sciences, Current Contents/Engineering, Computing
+and Technology, DBLP, Earthquake Engineering Abstracts, EBSCO Applied Science & Technology Source, EBSCO Discovery Service, EI-Compendex, Gale, io-port.net, Mathematical Reviews, OCLC, OmniFile, PASCAL, PSYCLINE, Referativnyi Zhurnal (VINITI), Science Select, SCImago, Summon by ProQuest Your Shopping Cart Subtotal: To cart Your marked items
+You have no marked items.
+Import List
+You are not logged in! Please log in to edit your catalogs.
+Read this Journal on Springerlink Online First Articles All Volumes & Issues For authors and editors Journal Citation Reports® 2016  Impact Factor 1.848 Aims and Scope Aims and Scope Close Submit Online Open Choice - Your Way to Open Access Instructions for Authors Instructions for Authors Close Types of papers Types of papers Close Editorial procedure Publication agreement Close Resources for Journal Authors Author Academy: Training for Authors Services for the Journal Contacts Contacts Close Customer Service Anzeigen Advertising Download Product Flyer Shipping Dates Shipping Dates Close
+2017
+9/106
+22.09.17
+2017
+8/106
+30.07.17
+2017
+7/106
+08.07.17
+2017
+6/106
+21.05.17
+2017
+5/106
+27.04.17
+2017
+4/106
+27.04.17
+2017
+3/106
+26.02.17
+2017
+2/106
+28.01.17
+2017
+10/106
+22.09.17
+2017
+1/106
+16.01.17
+Order Back Issues Bulk Orders Article Reprints Alerts for this journal Machine Learning Submit Artificial Intelligence (incl. Robotics) Shopping Cart MySpringer Login/Registration SpringerAlerts Company Media Compliance Careers Affiliate Program Help Overview Order FAQ Contact Us Imprint Legal Springer /*<![CDATA[*/
+wt = $.extend(new webtrekkV3({
+"customerId": "",
+"form": "0",
+"contentGroup": {
+"1": "Computer",
+"2": "AI"
+},
+"domain": "www.springer.com;checkout.springer.com;secure.worldpay.com",
+"heatmap": "0",
+"linkTrack": "link",
+"contentId": "Computer.10994_Machine Learning.aboutThis"
+}), {
+"product": "10994_Machine Learning",
+"productStatus": "view",
+"customParameter": {"5": "subjects;Computer;journals;STM"},
+"productCategory": {
+"3": "Computer",
+"2": "EN",
+"1": "journal subscription",
+"5": "Springer US",
+"4": ""
+},
+"mediaCode": "wt_mc;cm_mmc",
+"linkTrackDownloads": "avi;bmp;csv;doc;docx;dotx;eps;exe;gif;gz;jpeg;jpg;m4v;mov;mp3;mp4;mpg;pdf;png;ppt;pptx;ps;rss;rtf;swf;tar;tar.gz;tgz;tif;txt;wmv;xls;xlsx;zip"
+});
+wt.sendinfo();
+/*]]>*/

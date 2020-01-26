@@ -1,0 +1,64 @@
+Machine learning · GitHub
+or
+Machine learning
+Laying the foundations for Skynet tensorflow /
+C++
+scikit-learn /
+Python
+BVLC /
+C++
+fchollet /
+Python
+Microsoft /
+C++
+apache /
+Python
+apache /
+Scala
+dmlc /
+C++
+karpathy /
+JavaScript
+harthur /
+JavaScript
+Theano /
+Python
+clips /
+Python
+numenta /
+Python
+cazala /
+JavaScript
+JohnLangford /
+C++
+sjwhitworth /
+Go
+ryanb /
+Ruby
+NervanaSystems /
+Python
+johnmyleswhite /
+R
+h2oai /
+Java
+shogun-toolbox /
+C++
+mikeizbicki /
+Haskell
+apache /
+Java
+SeldonIO /
+Java
+nikolaypavlov /
+Objective-C
+datumbox /
+Java
+jubatus /
+C++
+danielsdeleo /
+Ruby
+cloudera /
+Java
+Related showcases New showcases
+© 2017
+Code review Project management Community Documentation Code hosting Atom Electron GitHub Desktop Developers Personal Open source For Business For Education Sponsorships About Blog Customers Careers Press Shop Contact GitHub Help Status Terms Privacy Security Training

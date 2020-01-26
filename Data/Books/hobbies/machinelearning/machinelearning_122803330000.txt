@@ -1,0 +1,47 @@
+Machine Learning
+New About InfoQ InfoQ Writers Contribute About C4Media Exclusive updates on: Login Br
+1,678,354 Aug unique visitors
+Development Java Clojure Scala .Net C# Mobile Android iOS IoT HTML5 JavaScript Functional Programming Web API
+Development
+Developers are increasingly testing their own and each other's code. "Evaluation anxiety" is common psychological condition that is directly impacted by self-testing and team-testing. Are practices like TDD a defense mechanism to protect coders from criticism? And do emerging methods like Behavior Driven Development represents a more emotionally healthy approach to team evaluation? Architecture Enterprise Architecture Scalability/Performance Design Case Studies Microservices Patterns Security
+Architecture & Design
+Tim Bozarth shares how Netflix is enabling engineers to go from "zero" to "production ready" in minutes, incorporating best-practices learned through years in the cloud. He shares the story of transitioning from their home-grown RPC machinery to open-source standards and how their new approach is improving team velocity across Netflix engineering. Data Science Big Data Machine Learning NoSQL Database Data Analytics Streaming
+Data Science
+AI depends on "data janitorial" work, as opposed to science work, and there is a gulf between prototype and sandbox, and innovation and production. Culture & Methods Agile Diversity Leadership Lean/Kanban Personal Growth Scrum Sociocracy Software Craftmanship Team Collaboration Testing UX
+Culture & Methods
+Developers are increasingly testing their own and each other's code. "Evaluation anxiety" is common psychological condition that is directly impacted by self-testing and team-testing. Are practices like TDD a defense mechanism to protect coders from criticism? And do emerging methods like Behavior Driven Development represents a more emotionally healthy approach to team evaluation? DevOps Infrastructure Continuous Delivery Automation Containers Cloud
+DevOps
+Tim Bozarth shares how Netflix is enabling engineers to go from "zero" to "production ready" in minutes, incorporating best-practices learned through years in the cloud. He shares the story of transitioning from their home-grown RPC machinery to open-source standards and how their new approach is improving team velocity across Netflix engineering. Podcasts Software Development Conference Nov 13-17 Mar 5-9, 2018 Streaming Machine Learning Reactive Microservices Containers Security You are here: Machine Learning Content on InfoQ Data Science 175 Followers Charles Humble 30 Followers Data Science 175 Followers Alex Giamas 2 Followers Data Science 175 Followers Roland Meertens 0 Followers Development 83 Followers Roland Meertens 0 Followers Data Science 175 Followers Alex Giamas 2 Followers Data Science 175 Followers Dylan Raithel 4 Followers Data Science 175 Followers Rags Srinivas 2 Followers Development 83 Followers Roland Meertens 0 Followers 5 5 Data Science 175 Followers Roland Meertens 0 Followers Mobile 30 Followers Sergio De Simone 4 Followers All news Data Science 175 Followers Seth Earley 0 Followers Data Science 175 Followers Amit Baghel 0 Followers Data Science 175 Followers Rags Srinivas 2 Followers 1 1 Data Science 175 Followers Srini Penchikala 12 Followers 2 2 Data Science 175 Followers Michael Manapat 2 Followers Data Science 175 Followers Michael Manapat 2 Followers Data Science 175 Followers Edwin Chen 1 Followers Justin Palmer 0 Followers Data Science 175 Followers Tom Hanlon 0 Followers 1 1 Data Science 175 Followers Srini Penchikala 12 Followers Data Science 175 Followers Srini Penchikala 12 Followers All articles
+49:47
+Architecture & Design 419 Followers Brian D'Alessandro 0 Followers Pedro Rubio 0 Followers
+38:23
+Data Science 175 Followers David Talby 0 Followers
+38:50
+Data Science 175 Followers Venkatesh Ramanathan 0 Followers
+58:48
+Culture & Methods 103 Followers Maciej Ceglowski 0 Followers
+22:14
+Data Science 175 Followers Ekrem Aksoy 0 Followers
+38:41
+Data Science 175 Followers Stacey Svetlichnaya 0 Followers
+36:31
+Data Science 175 Followers Illia Polosukhin 1 Followers
+25:52
+Data Science 175 Followers Jeffrey Shomaker
+Followers 1 1
+39:06
+Data Science 175 Followers Diego Klabjan 0 Followers All presentations Data Science 175 Followers Architecture & Design 419 Followers Architecture & Design 419 Followers Architecture & Design 419 Followers
+29:56
+Architecture & Design 419 Followers Eric Horesnyi 0 Followers
+30:29
+Architecture & Design 419 Followers Greg Murphy 0 Followers 2 2
+23:02
+Architecture & Design 419 Followers John Langford 0 Followers Home All topics QCon Conferences About InfoQ Our Audience Contribute About C4Media Create account Login QCons Worldwide InfoQ Weekly Newsletter Join a community of over 250 K senior developers by signing up for our newsletter RSS feed For daily content and announcements For major community updates For weekly community updates Login to InfoQ to interact with what matters most to you. Login with Google Login with Microsoft Login with Twitter Login with Facebook Recover your password... Quick overview of most important highlights in the industry and on the site. Build your own feed by choosing topics you want to read about and editors you want to hear from. Set up your notifications and don't miss out on content that matters to you Don't have a username ? REGISTER HERE Is your profile up-to-date? Please take a moment to review and update. Email Address Note: If updating/changing your email, a validation request will be sent
+Keep current company name Update Company name to:
+Keep current company role Update company role to:
+Keep current company Size Update company size to:
+Keep current country/zone Update country/zone to:
+Keep current state/province/region Update state/province/region to:
+Subscribe to our newsletter?
+Subscribe to our architect newsletter?
+Subscribe to our industry email notices? We notice you're using an ad blocker We understand why you use ad blockers. However to keep InfoQ free we need your support. InfoQ will not provide your data to third parties without individual opt-in consent. We only work with advertisers relevant to our readers. Please consider whitelisting us.

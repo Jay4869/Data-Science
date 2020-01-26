@@ -1,0 +1,123 @@
+Hiking Trips - Hiking Vacations & Tours | Travel with REI
+Shop
+Co-op Shop
+Go to Adventures REI.com Home Page Contact us: | Mon-Fri 7am to 5pm PST Regions Classic Destinations Backpacking Climbing Cruising Cycling Mountain Biking Hiking/Trekking Kayaking Multisport Wildlife Safaris Winter Sports Weekend New Trips Holiday Trips Family Adventures Signature Camping Private Departures Women's Adventures Volunteer Vacations Travel FAQs Travel Insurance About REI Adventures Exceptional Guides Fellow REI Travelers Solo Travel Classes & Events Previous Next Hiking & Trekking Trips Travel on foot when you really want to learn about a place. Whether you're trekking in Nepal, through Patagonia or around Europe, hiking brings you close to the land and its people. Side trips help vary the pace and allow for cultural exploration. Search all
+trips
+Africa
+({{tripCount({field:'regions', target:'africa', description:'Africa'})}})
+Antarctica
+({{tripCount({field:'regions', target:'polar', description:'Antarctica'})}})
+Asia
+({{tripCount({field:'regions', target:'asia', description:'Asia'})}})
+Australia/New Zealand
+({{tripCount({field:'regions', target:'pacific', description:'Australia/New Zealand'})}})
+Europe
+({{tripCount({field:'regions', target:'europe', description:'Europe'})}})
+Latin America
+({{tripCount({field:'regions', target:'latinAmerica', description:'Latin America'})}})
+North America
+({{tripCount({field:'regions', target:'northAmerica', description:'North America'})}})
+Alps
+({{tripCount({field:'classicDestinations', target:'european-alps', description:'Alps'})}})
+Everest/Himalaya
+({{tripCount({field:'classicDestinations', target:'everest', description:'Everest/Himalaya'})}})
+Galapagos Islands
+({{tripCount({field:'classicDestinations', target:'galapagos', description:'Galapagos Islands'})}})
+Kilimanjaro
+({{tripCount({field:'classicDestinations', target:'kilimanjaro', description:'Kilimanjaro'})}})
+Machu Picchu
+({{tripCount({field:'classicDestinations', target:'machu-picchu', description:'Machu Picchu'})}})
+Patagonia
+({{tripCount({field:'classicDestinations', target:'patagonia', description:'Patagonia'})}})
+US National Parks
+({{tripCount({field:'classicDestinations', target:'national-parks', description:'US National Parks'})}})
+New Trips
+({{tripCount({field:'tags', target:'[Nn]ew(-|\\s?)[Tt]rip', description:'New Trips'})}})
+Family
+({{tripCount({field:'tags', target:'[Ff]amil(y|ies)', description:'Family'})}})
+Women's Adventures
+({{tripCount({field:'tags', target:'[Ww]omens(-|\\s?)[Tt]rips', description:'Women\'s Adventures'})}})
+Signature Camping
+({{tripCount({field:'tags', target:'[Ss]ignature(-|\\s?)[Cc]amping', description:'Signature Camping'})}})
+Volunteer Vacations
+({{tripCount({field:'tags', target:'[Vv]olunteer((-|\\s?)[Vv]acations?)?', description:'Volunteer Vacations'})}})
+1 - Relaxed
+({{tripCount({field:'activityLevel', target:'1', description:'1 - Relaxed'})}})
+2 - Easy Active
+({{tripCount({field:'activityLevel', target:'2', description:'2 - Easy Active'})}})
+3 - Moderate
+({{tripCount({field:'activityLevel', target:'3', description:'3 - Moderate'})}})
+3-4 - Moderate Plus
+({{tripCount({field:'activityLevel', target:'3-4', description:'3-4 - Moderate Plus'})}})
+4 - Vigorous
+({{tripCount({field:'activityLevel', target:'4', description:'4 - Vigorous'})}})
+5 - Strenuous
+({{tripCount({field:'activityLevel', target:'5', description:'5 - Strenuous'})}})
+Up to $1,000 per person
+({{tripCount({field:'priceRange', target:'1:1000', description:'Up to $1,000 per person'})}})
+$1,001 - $3,000 per person
+({{tripCount({field:'priceRange', target:'1001:3000', description:'$1,001 - $3,000 per person'})}})
+$3,000 and above
+({{tripCount({field:'priceRange', target:'3000:+', description:'$3,000 and above'})}}) Search all
+trips
+Africa
+({{tripCount({field:'regions', target:'africa', description:'Africa'})}})
+Antarctica
+({{tripCount({field:'regions', target:'polar', description:'Antarctica'})}})
+Asia
+({{tripCount({field:'regions', target:'asia', description:'Asia'})}})
+Australia/New Zealand
+({{tripCount({field:'regions', target:'pacific', description:'Australia/New Zealand'})}})
+Europe
+({{tripCount({field:'regions', target:'europe', description:'Europe'})}})
+Latin America
+({{tripCount({field:'regions', target:'latinAmerica', description:'Latin America'})}})
+North America
+({{tripCount({field:'regions', target:'northAmerica', description:'North America'})}})
+Alps
+({{tripCount({field:'classicDestinations', target:'european-alps', description:'Alps'})}})
+Everest/Himalaya
+({{tripCount({field:'classicDestinations', target:'everest', description:'Everest/Himalaya'})}})
+Galapagos Islands
+({{tripCount({field:'classicDestinations', target:'galapagos', description:'Galapagos Islands'})}})
+Kilimanjaro
+({{tripCount({field:'classicDestinations', target:'kilimanjaro', description:'Kilimanjaro'})}})
+Machu Picchu
+({{tripCount({field:'classicDestinations', target:'machu-picchu', description:'Machu Picchu'})}})
+Patagonia
+({{tripCount({field:'classicDestinations', target:'patagonia', description:'Patagonia'})}})
+US National Parks
+({{tripCount({field:'classicDestinations', target:'national-parks', description:'US National Parks'})}})
+New Trips
+({{tripCount({field:'tags', target:'[Nn]ew(-|\\s?)[Tt]rip', description:'New Trips'})}})
+Family
+({{tripCount({field:'tags', target:'[Ff]amil(y|ies)', description:'Family'})}})
+Women's Adventures
+({{tripCount({field:'tags', target:'[Ww]omens(-|\\s?)[Tt]rips', description:'Women\'s Adventures'})}})
+Signature Camping
+({{tripCount({field:'tags', target:'[Ss]ignature(-|\\s?)[Cc]amping', description:'Signature Camping'})}})
+Volunteer Vacations
+({{tripCount({field:'tags', target:'[Vv]olunteer((-|\\s?)[Vv]acations?)?', description:'Volunteer Vacations'})}})
+1 - Relaxed
+({{tripCount({field:'activityLevel', target:'1', description:'1 - Relaxed'})}})
+2 - Easy Active
+({{tripCount({field:'activityLevel', target:'2', description:'2 - Easy Active'})}})
+3 - Moderate
+({{tripCount({field:'activityLevel', target:'3', description:'3 - Moderate'})}})
+3-4 - Moderate Plus
+({{tripCount({field:'activityLevel', target:'3-4', description:'3-4 - Moderate Plus'})}})
+4 - Vigorous
+({{tripCount({field:'activityLevel', target:'4', description:'4 - Vigorous'})}})
+5 - Strenuous
+({{tripCount({field:'activityLevel', target:'5', description:'5 - Strenuous'})}})
+Up to $1,000 per person
+({{tripCount({field:'priceRange', target:'1:1000', description:'Up to $1,000 per person'})}})
+$1,001 - $3,000 per person
+({{tripCount({field:'priceRange', target:'1001:3000', description:'$1,001 - $3,000 per person'})}})
+$3,000 and above
+({{tripCount({field:'priceRange', target:'3000:+', description:'$3,000 and above'})}}) Remove {{crumb.description}}
+{{group.groupLabel}} trips {{truncateText(trip.summary)}} {{trip.activities.join(", ")}} {{trip.lengthDays}} {{trip.activityLevel}} {{trip.pricing.defaultPrice | currency:undefined:0}}
+from {{trip.pricing.memberFromPrice | currency:undefined:0}}
+from {{trip.pricing.nonMemberFromPrice | currency:undefined:0}} How are we doing? REI is a registered seller of travel in the following states: Washington (WST 578027004); Iowa (784); California (CST 2076080-50). Registration as a seller of travel does not constitute approval by the state of California. (800) 622-2236 Mon - Fri 7am to 5pm PST Email Us Then, go outside. We'll take it from there. Live Chat Daily, 7am to 5pm PT Help Center Find answers online anytime. twitter facebook pinterest youtube instagram Who we are Sign Up For Email Know what's new. Plus, get a coupon for 15% off!
+The REI Difference: 100% satisfaction guaranteed. The right gear and best advice. 10% annual member refund.
+© 2017 Recreational Equipment, Inc. All rights reserved. REI and the REI co-op logo are trademarks of Recreational Equipment, Inc. Regions Regions Africa Antarctica Asia Australia/New Zealand Europe Latin America North America Classic Destinations Classic Destinations Alps Everest/Himalaya Galapagos Islands Kilimanjaro Machu Picchu Patagonia US National Parks Backpacking Climbing Cruising Cycling Mountain Biking Hiking/Trekking Kayaking Multisport Wildlife Safaris Winter Sports Weekend New Trips Holiday Trips Family Adventures Signature Camping Private Departures Women's Adventures Volunteer Vacations The REI Difference The REI Difference 100% satisfaction guaranteed 100% satisfaction guaranteed We stand behind everything we sell. If you are not satisfied with your REI purchase, you can return it for a replacement or refund within one year of purchase. REI's guarantee doesn't cover ordinary wear and tear or damage caused by improper use or accidents. Gear & advice you can trust Gear & advice you can trust At REI, we live and breathe the outdoors, and we're passionate about sharing our expertise with people of all skill levels. Whether you're new to the outdoors or a seasoned explorer, we'll take the time to understand your needs and help you find the right gear for you. 10% annual member refund 10% annual member refund Anyone can shop at REI, but for a one-time $20 fee you can become an REI member and enjoy a lifetime of benefits. These include an annual member refund, typically 10% back on eligible purchases.*

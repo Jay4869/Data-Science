@@ -1,0 +1,179 @@
+Machine Learning A-Z™: Hands-On Python & R In Data Science | Udemy
+Development
+All Development
+Web Development Mobile Apps Programming Languages Game Development Databases Software Testing Software Engineering Development Tools E-Commerce
+Business
+All Business
+Finance Entrepreneurship Communications Management Sales Strategy Operations Project Management Business Law Data & Analytics Home Business Human Resources Industry Media Real Estate Other
+IT & Software
+All IT & Software
+IT Certification Network & Security Hardware Operating Systems Other
+Office Productivity
+All Office Productivity
+Microsoft Apple Google SAP Intuit Salesforce Oracle Other
+Personal Development
+All Personal Development
+Personal Transformation Productivity Leadership Personal Finance Career Development Parenting & Relationships Happiness Religion & Spirituality Personal Brand Building Creativity Influence Self Esteem Stress Management Memory & Study Skills Motivation Other
+Design
+All Design
+Web Design Graphic Design Design Tools User Experience Game Design Design Thinking 3D & Animation Fashion Architectural Design Interior Design Other
+Marketing
+All Marketing
+Digital Marketing Search Engine Optimization Social Media Marketing Branding Marketing Fundamentals Analytics & Automation Public Relations Advertising Video & Mobile Marketing Content Marketing Non-Digital Marketing Growth Hacking Affiliate Marketing Product Marketing Other
+Lifestyle
+All Lifestyle
+Arts & Crafts Food & Beverage Beauty & Makeup Travel Gaming Home Improvement Pet Care & Training Other
+Photography
+All Photography
+Digital Photography Photography Fundamentals Portraits Landscape Black & White Photography Tools Mobile Photography Travel Photography Commercial Photography Wedding Photography Wildlife Photography Video Design Other
+Health & Fitness
+All Health & Fitness
+Fitness General Health Sports Nutrition Yoga Mental Health Dieting Self Defense Safety & First Aid Dance Meditation Other
+Teacher Training
+All Teacher Training
+Instructional Design Educational Development Teaching Tools Other
+Music
+All Music
+Instruments Production Music Fundamentals Vocal Music Techniques Music Software Other
+Academics
+All Academics
+Social Science Math & Science Humanities
+Language
+All Language
+English Spanish German French Japanese Portuguese Chinese Russian Latin Arabic Hebrew Italian Other
+Test Prep
+All Test Prep
+Grad Entry Exam International High School College Entry Exam Test Taking Skills Other Shopping cart Categories Become an Instructor Udemy for Business Help Sign Up Log In Development Business IT & Software Office Productivity Personal Development Design Marketing Lifestyle Photography Health & Fitness Teacher Training Music Academics Language Test Prep Web Development Mobile Apps Programming Languages Game Development Databases Software Testing Software Engineering Development Tools E-Commerce Finance Entrepreneurship Communications Management Sales Strategy Operations Project Management Business Law Data & Analytics Home Business Human Resources Industry Media Real Estate Other IT Certification Network & Security Hardware Operating Systems Other Microsoft Apple Google SAP Intuit Salesforce Oracle Other Personal Transformation Productivity Leadership Personal Finance Career Development Parenting & Relationships Happiness Religion & Spirituality Personal Brand Building Creativity Influence Self Esteem Stress Management Memory & Study Skills Motivation Other Web Design Graphic Design Design Tools User Experience Game Design Design Thinking 3D & Animation Fashion Architectural Design Interior Design Other Digital Marketing Search Engine Optimization Social Media Marketing Branding Marketing Fundamentals Analytics & Automation Public Relations Advertising Video & Mobile Marketing Content Marketing Non-Digital Marketing Growth Hacking Affiliate Marketing Product Marketing Other Arts & Crafts Food & Beverage Beauty & Makeup Travel Gaming Home Improvement Pet Care & Training Other Digital Photography Photography Fundamentals Portraits Landscape Black & White Photography Tools Mobile Photography Travel Photography Commercial Photography Wedding Photography Wildlife Photography Video Design Other Fitness General Health Sports Nutrition Yoga Mental Health Dieting Self Defense Safety & First Aid Dance Meditation Other Instructional Design Educational Development Teaching Tools Other Instruments Production Music Fundamentals Vocal Music Techniques Music Software Other Social Science Math & Science Humanities English Spanish German French Japanese Portuguese Chinese Russian Latin Arabic Hebrew Italian Other Grad Entry Exam International High School College Entry Exam Test Taking Skills Other 4.4
+Machine Learning A-Z™: Hands-On Python & R In Data Science
+Best Seller
+4.4 Preview This Course Current price: Original price: Discount:
+Add to Cart
+30-Day Money-Back Guarantee
+40.5 hours on-demand video
+20 Articles
+2 Supplemental Resources
+Full lifetime access
+Access on mobile and TV
+Certificate of Completion
+Have a coupon? Master Machine Learning on Python & R Have a great intuition of many Machine Learning models Make accurate predictions Make powerful analysis Make robust Machine Learning models Create strong added value to your business Use Machine Learning for personal purpose Handle specific topics like Reinforcement Learning, NLP and Deep Learning Handle advanced techniques like Dimensionality Reduction Know which Machine Learning model to choose for each type of problem Build an army of powerful Machine Learning models and know how to combine them to solve any problem Just some high school mathematics level Interested in the field of Machine Learning? Then this course is for you! This course has been designed by two professional Data Scientists so that we can share our knowledge and help you learn complex theory, algorithms and coding libraries in a simple way. We will walk you step-by-step into the World of Machine Learning. With every tutorial you will develop new skills and improve your understanding of this challenging yet lucrative sub-field of Data Science. This course is fun and exciting, but at the same time we dive deep into Machine Learning. It is structured the following way: Part 1 - Data Preprocessing Part 2 - Regression: Simple Linear Regression, Multiple Linear Regression, Polynomial Regression, SVR, Decision Tree Regression, Random Forest Regression Part 3 - Classification: Logistic Regression, K-NN, SVM, Kernel SVM, Naive Bayes, Decision Tree Classification, Random Forest Classification Part 4 - Clustering: K-Means, Hierarchical Clustering Part 5 - Association Rule Learning: Apriori, Eclat Part 6 - Reinforcement Learning: Upper Confidence Bound, Thompson Sampling Part 7 - Natural Language Processing: Bag-of-words model and algorithms for NLP Part 8 - Deep Learning: Artificial Neural Networks, Convolutional Neural Networks Part 9 - Dimensionality Reduction: PCA, LDA, Kernel PCA Part 10 - Model Selection & Boosting: k-fold Cross Validation, Parameter Tuning, Grid Search, XGBoost Moreover, the course is packed with practical exercises which are based on live examples. So not only will you learn the theory, but you will also get some hands-on practice building your own models. And as a bonus, this course includes both Python and R code templates which you can download and use on your own projects. Anyone interested in Machine Learning Students who have at least high school knowledge in math and who want to start learning Machine Learning Any intermediate level people who know the basics of machine learning, including the classical algorithms like linear regression or logistic regression, but who want to learn more about it and explore all the different fields of Machine Learning. Any people who are not that comfortable with coding but who are interested in Machine Learning and want to apply it easily on datasets. Any students in college who want to start a career in Data Science. Any data analysts who want to level up in Machine Learning. Any people who are not satisfied with their job and who want to become a Data Scientist. Any people who want to create added value to their business by using powerful Machine Learning tools
+40:48:03
++ – Welcome to the course!
+6 Lectures
+23:52
+Preview
+03:22
+06:37
+Preview
+05:40
+00:12
+07:31
+00:29
++ – -------------------------- Part 1: Data Preprocessing --------------------------
+11 Lectures
+01:43:47
+Preview
+01:35
+06:58
+05:20
+11:55
+01:00
+15:57
+18:01
+17:37
+15:36
+01:00
+08:48
+5 questions
++ – ------------------------------ Part 2: Regression ------------------------------
+1 Lecture
+00:23
+00:23
++ – Simple Linear Regression
+12 Lectures
+01:25:06
+03:18
+02:56
+05:45
+03:09
+09:55
+08:19
+06:43
+14:50
+04:40
+Preview
+05:58
+03:38
+15:55
+5 questions
++ – Multiple Linear Regression
+18 Lectures
+02:21:46
+03:18
+03:44
+01:02
+01:00
+07:21
+02:10
+15:41
+15:57
+02:56
+05:28
+13:14
+12:40
+09:10
+07:50
+10:25
+04:26
+17:51
+07:33
+5 questions
++ – Polynomial Regression
+12 Lectures
+02:09:06
+05:08
+03:18
+11:38
+11:45
+19:57
+05:45
+10:58
+09:12
+09:58
+19:54
+09:35
+11:58
++ – Support Vector Regression (SVR)
+3 Lectures
+34:59
+03:18
+19:57
+11:44
++ – Decision Tree Regression
+4 Lectures
+49:03
+11:06
+03:18
+14:45
+19:54
++ – Random Forest Regression
+4 Lectures
+44:28
+06:44
+03:18
+16:44
+17:42
++ – Evaluating Regression Models Performance
+5 Lectures
+35:06
+05:11
+09:56
+08:54
+09:16
+01:49
+4.5
+56,259 240,964 30 My name is Kirill Eremenko and I am super-psyched that you are reading this! Data Science Professionally, I am a Data Science management consultant with over five years of experience in finance, retail, transport and other industries. I was trained by the best analytics mentors at Deloitte Australia and today I leverage Big Data to drive business strategy, revamp customer experience and revolutionize existing operational processes. From my courses you will straight away notice how I combine my real-life experience and academic background in Physics and Mathematics to deliver professional step-by-step coaching in the space of Data Science. I am also passionate about public speaking, and regularly present on Big Data at leading Australian universities and industry events. Forex Trading Since 2007 I have been actively involved in the Forex market as a trader as well as running programming courses in MQL4. Forex trading is something I really enjoy, because the Forex market can give you financial, and more importantly - personal freedom. In my other life I am a Data Scientist - I study numbers to analyze patterns in business processes and human behaviour... Sound familiar? Yep! Coincidentally, I am a big fan of Algorithmic Trading :) EAs, Forex Robots, Indicators, Scripts, MQL4, even java programming for Forex - Love It All! Summary To sum up, I am absolutely and utterly passionate about both Data Science and Forex Trading and I am looking forward to sharing my passion and knowledge with you!
+4.4
+23,352 140,134 6 Hi. My name is Hadelin de Ponteves. Always eager to learn, I invested a lot of my time in learning and teaching, covering a wide range of different scientific topics.  Today I am passionate about machine learning, deep learning and artificial intelligence. I will do my very best to convey my passion for data science to you. I have gained diverse experience in this field. I have an engineering master's degree with a specialisation in data science. I spent one year doing research in machine learning, working on innovative and exciting projects. Then a work experience at Google where I implemented some machine learning models for business analytics.  Eventually, I realised I spent most of my time doing analysis and I gradually needed to feed my creativity so I became an entrepreneur. My courses will combine the two dimensions of analysis and creativity, allowing you to learn all the analytic skills required in data science, by applying it on creative ideas.  Looking forward to working together! Hello, je m'appelle Hadelin de Ponteves et je suis un data scientist passionné.  Etant particulièrement sensible au domaine de l'éducation, je suis déterminé à y apporter de grandes contributions. J'ai déjà investi beaucoup de mon temps dans la sphère de l'éducation, à étudier et enseigner divers sujets scientifiques.  Aujourd'hui, je suis passionné de data sciences, d'intelligence artificielle et de deep learning. Et je ferai de mon mieux pour vous transmettre mes passions. Car c'est en étant passionné que l'on réussit le mieux dans un domaine, et que l'on est le plus heureux dans notre travail au quotidien. J'ai acquis beaucoup d'expérience en data sciences. J'ai effectué mes études à l'école Centrale Paris, où j'ai suivi le parcours Data Sciences, en parallèle d'un master de recherche en machine learning à l'Ecole Normale Supérieure. Ma page étudiante s'est enchaînée avec une expérience chez Google où j'ai fait des data sciences pour résoudre des problèmes business. Puis j'ai réalisé que je passais la plupart de mon temps à analyser et je développais petit à petit un besoin de créer. Donc pour nourrir ma créativité, je suis devenu un entrepreneur. Et justement, mes cours vont tous combiner ces deux dimensions d'analyse et de créativité, grâce auxquelles vous intégrerez toutes les compétences à avoir en data sciences, en les appliquant à des idées créatives. J'ai hâte de vous retrouver dans mes cours et de partager mes passions avec vous! Hadelin de Ponteves
+4.5
+49,965 215,601 20 Hi there, We are the SuperDataScience team. You will find us in the Data Science courses taught by Kirill Eremenko - we are here to help you out with any questions and make sure your journey through the courses is always smooth sailing! The best way to get in touch is to post a discussion in the Q&A of the course you are taking. In most cases we will respond within 24 hours. We're passionate about helping you enjoy the courses! See you in class, Sincerely, The Real People at SuperDataScience
+Copyright © 2017 Udemy, Inc.

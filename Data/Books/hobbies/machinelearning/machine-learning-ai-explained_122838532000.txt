@@ -1,0 +1,96 @@
+AI versus machine learning: what's the difference? | WIRED UK
+Technology Technology Science Science Culture Culture Video Video Reviews Reviews Magazine Magazine More Business Security Space Podcasts Events Innovation Awards Subscribe About Follow 00 / 00 These body hackers have stepped straight out of sci-fi
+Art
+Bryan Cranston on the beauty of Philip K. Dick's Electric Dreams
+Sci-Fi
+In the battle to change people's minds, desires come before facts
+Neuroscience
+10 must-read stories you may have missed this week
+WIRED Weekender
+Here's a snappy summary of all the iPhone X hands-on reviews
+iPhone
+We're lucky Earth isn't caught in a permanent Ice Age
+Exoplanets
+This crazy intricate 3D-printed chair was built by robots
+Robots
+How to change minds and influence people's behaviour
+Neuroscience
+At Open House London this weekend? Here's a handy guide
+Design
+How do you capture the terrifying reality of Iraqi bomb disposal?
+WIRED Photo
+Your must-see exhibitions at the 2017 London Design Festival
+Architecture
+Apple's iPhone X reveal was a major augmented reality letdown
+WIRED Opinion
+Study into fluid dynamics of cats wins big at 2017 Ig Nobel Prize
+Cats
+A farewell to Cassini, from the scientist behind its iconic photos
+Nasa
+Polaroid is back with a new but retro instant camera
+Gadgets
+The Babadook and 15 more of the best films on Netflix UK
+TV
+All the best images from Cassini's groundbreaking mission
+Nasa
+These new satellite images show the scale of Irma's destruction
+Weather
+From AR to robots, we're finally getting the store of the future
+WIRED Retail 2017
+So-so Apple, LEGO Star Wars: Podcast 335
+Podcast
+wired These body hackers have stepped straight out of sci-fi
+Art
+Bryan Cranston on the beauty of Philip K. Dick's Electric Dreams
+Sci-Fi
+In the battle to change people's minds, desires come before facts
+Neuroscience
+10 must-read stories you may have missed this week
+WIRED Weekender
+Here's a snappy summary of all the iPhone X hands-on reviews
+iPhone
+We're lucky Earth isn't caught in a permanent Ice Age
+Exoplanets
+This crazy intricate 3D-printed chair was built by robots
+Robots
+How to change minds and influence people's behaviour
+Neuroscience
+At Open House London this weekend? Here's a handy guide
+Design
+How do you capture the terrifying reality of Iraqi bomb disposal?
+WIRED Photo
+Your must-see exhibitions at the 2017 London Design Festival
+Architecture
+Apple's iPhone X reveal was a major augmented reality letdown
+WIRED Opinion
+Study into fluid dynamics of cats wins big at 2017 Ig Nobel Prize
+Cats
+A farewell to Cassini, from the scientist behind its iconic photos
+Nasa
+Polaroid is back with a new but retro instant camera
+Gadgets
+The Babadook and 15 more of the best films on Netflix UK
+TV
+All the best images from Cassini's groundbreaking mission
+Nasa
+These new satellite images show the scale of Irma's destruction
+Weather
+From AR to robots, we're finally getting the store of the future
+WIRED Retail 2017
+So-so Apple, LEGO Star Wars: Podcast 335
+Podcast
+Machine learning versus AI: what's the difference? AI and machine learning are very much related, but they're not quite the same thing By Lee Bell 01 Dec 2016 By Lee Bell Thanks to the likes of Google, Amazon, and Facebook, the terms artificial intelligence (AI) and machine learning have become much more widespread than ever before. They are often used interchangeably and promise all sorts from smarter home appliances to robots taking our jobs. The UK has a new AI centre – so when robots kill, we know who to blame
+Artificial intelligence
+But while AI and machine learning are very much related, they are not quite the same thing. Google's new AI learns by baking tasty machine learning cookies By Rowland Manthorpe AI is a branch of computer science attempting to build machines capable of intelligent behaviour, while
+Stanford University defines machine learning as “the science of getting computers to act without being explicitly programmed”.
+You need AI researchers to build the smart machines, but you need machine learning experts to make them truly intelligent. Google's new algorithm edits your photos in the blink of an eye By Elizabeth Stinson Let’s take a very simplified example. When you make a typo, for instance, while searching in Google, it gives you the message: "Did you mean..."? This is the result of one of Google's machine learning algorithms; a system that detects what searches you make a couple seconds after making a certain search. For example, suppose you were searching for 'WIRED' on Google but accidentally typed 'Wored'. After the search, you'd probably realise you typed it wrong and you'd go back and search for 'WIRED' a couple of seconds later. Google’s algorithm recognises that you searched for something a couple of seconds after searching something else, and it keeps this in mind for future users who make a similar typing mistake. As a result, Google 'learns' to correct it for you. This AI turns #FoodPorn into recipes you can use By Matt Burgess While this is a very basic example, data scientists, developers, and researchers are using much more complex methods of machine learning to gain insights previously out of reach. Programs that learn from experience are helping them discover how the human genome works, understand consumer behaviour to a degree never before possible and build systems for purchase recommendations, image recognition, and fraud prevention, among other uses. So now you have a basic idea of what machine learning is, how is it different to that of AI? We spoke to Intel’s Nidhi Chappell, head of machine learning to clear this up. “AI is basically the intelligence – how we make machines intelligent, while machine learning is the implementation of the compute methods that support it. The way I think of it is: AI is the science and machine learning is the algorithms that make the machines smarter. “So the enabler for AI is machine learning,” she added. Drones and phones are the next frontier for AI breakthroughs By Matt Burgess Chappell went on to explain that machine learning is the fastest growing part of AI, so that’s why we are seeing a lot of conversations around this lately. Even though it’s a small percentage of the workloads in computing today, it’s the fastest growing area, so that’s why everyone is honing in on that. "Simple examples are when you go to a new place and search online for ‘top things to do’, the order you see them in is defined by machine learning, and how they are ranked and rated, this is all machine learning,” Chappell said, adding that it’s the same story for when news is trending. DeepMind's AI learned to ride the London Underground using human-like reason and memory
+Artificial intelligence
+Microsoft wants to be a major AI player. Here's its master plan By Bonnie Christian “AI has become so pervasive in our lives we don’t come to recognise that it’s powering a lot of things,” she added. “You probably use it dozens of times a day without knowing it.” "Your smartphone, house, bank, and car already use AI on a daily basis," explained Facebook engineering leads Yann LeCun and Joaquin Quiñonero Candela. "Sometimes it’s obvious, like when you ask Siri to get you directions to the nearest gas station, or Facebook suggests a friend for you to tag in an image you posted online. Sometimes less so, like when you use your Amazon Echo to make an unusual purchase on your credit card and don’t get a fraud alert from your bank. "AI is going to bring major shifts in society through developments in self-driving cars, medical image analysis, better medical diagnosis, and personalised medicine. And it will also be the backbone of many of the most innovative apps and services of tomorrow." The pair continued that AI isn't magic, it's just maths - albeit really hard maths. The three types of AI learning But in order for AI to progress, machine learning must make big jumps in terms of performance, and this is rarely possible in the traditional high-performance computing world, where problems are well-defined and optimisation work has already been happening for many years. Machine learning algorithms still have room for improvement, and that’s why a lot of the large technology companies are making it a central focus to their strategy, and working tirelessly to make it more intelligent, in order to push forward and create the next innovation, such as completely autonomous and 100 per cent safe self-driving cars. RECOMMENDED RECOMMENDED Biofuels versus petrol – what's the difference? By Amelia Heathman
+Fossil Fuels
+Google's DeepMind trains AI to cut its energy bills by 40% By Matt Burgess
+Google
+Microsoft wants to 'solve' cancer in the next 10 years using AI By Amelia Heathman
+Health
+Yahoo's anti-abuse AI can hunt out even the most devious online trolls By Matthew Reynolds
+Yahoo
+Privacy policy and cookie statement Terms & conditions Careers Contact © Condé Nast UK 2017

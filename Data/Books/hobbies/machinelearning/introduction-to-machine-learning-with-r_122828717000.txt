@@ -1,0 +1,100 @@
+Introduction to Machine Learning - Online Course
+× Data Scientist
+with R Career Data Scientist
+with Python Career Quantitative Analyst
+with R Career Data Manipulation
+with Python Skill Data Visualization
+with R Skill Importing & Cleaning Data
+with R Skill | Hadley Wickham Max Kuhn Filip Schouwenaars Hugo Bowne-Anderson Dhavide Aruliah David Robinson
+paid course
+Introduction to Machine Learning 6 hours 15 Videos 81 Exercises 52,326 Participants 6700 XP Data Science Instructor at DataCamp Vincent has a Master's degree in Artificial Intelligence, and has more than 3 years of experience with machine learning problems of different kinds. He experienced first-hand the difficulties that come with building and assessing machine learning systems. This made him passionate about teaching people how to do machine learning the right way. Doctoral Student at Vrije Universiteit Brussel Even though Gilles has recently graduated with a degree in Fundamental Mathematics, he knows that there's more to be done than mathematics. With a solid knowledge in classical statistics, he now pursues a PhD in parallelizing regression modeling techniques. Filip Schouwenaars Sebastian Perez Saaibi Course Description This online machine learning course is perfect for those who have a solid basis in R and statistics, but are complete beginners with machine learning. After a broad overview of the discipline's most common techniques and applications, you'll gain more insight into the assessment and training of different machine learning models. The rest of the course is dedicated to a first reconnaissance with three of the most basic machine learning tasks: classification, regression and clustering. 1
+Free
+In this first chapter, you get your first intro to machine learning. After learning the true fundamentals of machine learning, you'll experiment with the techniques that are explained in more detail in future chapters.
+50 xp
+100 xp
+50 xp
+50 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+You'll learn how to assess the performance of both supervised and unsupervised learning algorithms. Next, you'll learn why and how you should split your data in a training set and a test set. Finally, the concepts of bias and variance are explained.
+50 xp
+100 xp
+100 xp
+100 xp
+100 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+50 xp
+You'll gradually take your first steps to correctly perform classification, one of the most important tasks in machine learning today. By the end of this chapter, you'll be able to learn and build a decision tree and to classify unseen observations with k-Nearest Neighbors.
+50 xp
+100 xp
+50 xp
+100 xp
+100 xp
+50 xp
+100 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+200 xp
+Although a traditional subject in classical statistics, you can also consider regression from a machine learning point of view. You'll learn more about the predictive capabilities and performance of regression algorithms. At the end of this chapter you'll be acquainted with simple linear regression, multi-linear regression and k-Nearest Neighbors regression.
+50 xp
+100 xp
+100 xp
+100 xp
+100 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+100 xp
+As an unsupervised learning technique, clustering requires a different approach than the ones you have seen in the previous chapters. How can you cluster? When is a clustering any good? All these questions will be answered; you'll also learn about k-means clustering and hierarchical clustering along the way. At the end of this chapter and our machine learning video tutorials, you’ll have a basic understanding of all the main principles.
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+50 xp
+50 xp
+100 xp
+100 xp
+50 xp
+50 xp
+100 xp
+100 xp
+100 xp
+50 xp
+200 xp
+Learn Courses Skill Tracks Career Tracks Pricing Resources Community RDocumentation Course Editor Upcoming Courses Groups For Business For Academics About Company Stories Jobs Become an Instructor Press Privacy Policy Terms of Use
+DataCamp offers interactive R and Python courses on topics in data science, statistics, and machine learning. Learn from a team of expert teachers in the comfort of your browser with video lessons and fun coding challenges.
+×

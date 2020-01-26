@@ -1,0 +1,4 @@
+Microsoft Azure Machine Learning Studio
+Toggle navigation Toggle navigation Cortana Intelligence Gallery Cortana Intelligence Gallery Help Search Help Content x Search help content ↗ Forums Machine Learning Forums
+Provide feedback and request features
+Feedback Submit Feedback x Send a smile Send a frown 1000 NEW! Use the studio to build and publish your experiments Contribute to the community Complete reference of all modules you can insert into your experiment and scoring workflow Ask a question or check out video tutorials, blogs, and whitepapers from our experts Take a quick tour of the Azure ML Studio features. Get, upload, and save data to your workspace. Clean, transform, and normalize your data. Learn the steps required for building, scoring and evaluating a predictive model. Publish and stage your predictive model as an Azure-based service.

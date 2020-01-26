@@ -1,0 +1,19 @@
+Machine Learning (Theory)
+Machine Learning (Theory) 8/3/2017 The Real World Interactive Learning Tutorial 7/19/2017 ICML is changing its constitution Anyways, please comment if you have a concern or thoughts.
+6/12/2017 Machine Learning the Future Class Much of this material is fairly close to research so to assist other machine learning lecturers around the world in digesting the material, I’ve made all the source available as well.
+Feel free to use and improve. (*) The NYU policy changed so that students could not be shown in classroom videos.
+4/22/2017 Fact over Fiction The election outcome is actually less important than the endemic disagreement that disinformation creates.
+When people simply believe in different facts about the world how can you expect them to agree?
+There probably are some good uses of mass disinformation somewhere, but I’m extremely skeptical the value exceeds the cost.
+Is opposition to mass disinformation broad enough that it makes a good organizing principle?
+If mass disinformation was eliminated or greatly reduced it would be an enormous value to society, particularly to the disinformed.
+It would not address the fundamental economic stagnation of the median household in the United States, but it would remove a significant threat to civil society which may be necessary for such progress.
+Given a choice between the right to mass disinform and democracy, I choose democracy.
+What about technical solutions?
+Technical solutions seem necessary for success, perhaps with changes to law incentivizing this.
+It’s important to understand that something going before the courts is inherently slow, particularly because courts tend to be deeply overloaded.
+A significant increase in the number of cases going before courts makes an approach nonviable in practice. Would we regret this? There is a long history of governments abusing laws to censor inconvenient news sources so caution is warranted.
+Structuring new laws in a manner such that they cannot be abused is an important consideration.
+It is obviously important to leave satire fully intact which seems entirely possibly by making the fact that it is satire unmistakable.
+This entire discussion is also not relevant to individuals speaking to other individuals—that is not what creates a problem.
+4/12/2017 The Decision Service is Hiring Details A modest proposal How to Contribute a Post Who? What? Why? Why did my comment not appear? Recent Comments Renato George George The Real World Interactive Learning Tutorial – MeasurementBlog The Real World Interactive Learning Tutorial | high dimensional space RSS Feeds Computational Complexity Geomblog natural language processing blog Machined Learnings Machine Learning (Theory) Categories ML Related Gelman—SMCISS ICML Paper Discussion Inductio Ex Machina KD Nuggets Kernel Machines Machine Learning Thoughts MLOSS Reinforcement Learning SM, DM, & ML Wikipedia: Machine Learning Research Computational Complexity Computer Research Policy Geomblog Mathematics Mathematics and Computation Michael Nielsen Oddhead Quantum Algorithms Quantum Pontiff Meta Register Log in WordPress.org

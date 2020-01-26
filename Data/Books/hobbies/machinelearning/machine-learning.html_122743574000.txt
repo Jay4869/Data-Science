@@ -1,0 +1,24 @@
+Machine Learning with MATLAB - MATLAB & Simulink
+Toggle Main Navigation My Account Associate License My Community Profile Contact Us How to Buy My Account Associate License My Community Profile Download a Free Trial of Statistics and Machine Learning Toolbox Machine Learning with MATLAB Build predictive models and discover useful patterns from observed data. Machine Learning with MATLAB Webinar Learn how to get started using machine learning tools to detect patterns and build predictive models from your data sets. Get started with examples for classification, regression, and clustering Build predictive models and discover useful patterns from observed data. Use model refinement and reduction techniques to create an accurate model that best captures the predictive power of your data. Integrate machine learning models into enterprise systems, clusters, and clouds, and target models to real-time embedded hardware.
+3:02
+3:02
+5 Videos
+5 Videos
+(5 Videos)
+Choosing the Best Classification Model and Avoiding Overfitting Explore Products for Machine Learning Statistics and Machine Learning Toolbox™ Neural Network Toolbox™ Computer Vision System Toolbox™ Fuzzy Logic Toolbox™ Classification Build models to classify data into different categories. This can help you more accurately analyze and visualize your data.
+34:34
+34:34
+5:12
+5:12
+39:18
+39:18 Classification Resources Classification Learner App Introductory Classification Examples Classification on MATLAB Answers Regression
+3:02
+3:02
+23:51
+23:51
+35:14
+35:14 Regression Resources Linear Regression Introductory Regression Examples Regression on MATLAB Answers Clustering
+41:25
+41:25
+3:48
+3:48 Clustering Resources Introductory Clustering Examples Unsupervised Learning Clustering on MATLAB Answers × Select Your Country You can also select a location from the following list: Americas Europe Asia Pacific See all countries Machine Learning Community Explore and share user-generated examples or toolboxes, and view MATLAB Answers for solutions to your questions. MatConvNet: CNNs for MATLAB Getting Started with Kaggle Data Science Competitions The Netflix Prize and Production Machine Learning Systems: An Insider Look MATLAB Simulink Student Software Hardware Support File Exchange Downloads Trial Software Contact Sales Pricing and Licensing Documentation Tutorials Examples Videos and Webinars Training Installation Help Answers Consulting Application Status License Center Careers Newsroom Social Mission About MathWorks Accelerating the pace of engineering and science MathWorks is the leading developer of mathematical computing software for engineers and scientists. Discover… United States © 1994-2017 The MathWorks, Inc. Join the conversation

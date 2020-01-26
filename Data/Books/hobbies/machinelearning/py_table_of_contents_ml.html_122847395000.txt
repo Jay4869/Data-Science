@@ -1,0 +1,5 @@
+Machine Learning — OpenCV-Python Tutorials 1 documentation
+Introduction to OpenCV Gui Features in OpenCV Core Operations Image Processing in OpenCV Feature Detection and Description Video Analysis Camera Calibration and 3D Reconstruction K-Nearest Neighbour Support Vector Machines (SVM) K-Means Clustering Computational Photography Object Detection OpenCV-Python Bindings Machine Learning K-Nearest Neighbour K-Nearest Neighbour Learn to use kNN for classification
+Plus learn about handwritten digit recognition using kNN Support Vector Machines (SVM) Support Vector Machines (SVM) Understand concepts of SVM K-Means Clustering K-Means Clustering Learn to use K-Means Clustering to group data to a number of clusters.
+Plus learn to do color quantization using K-Means Clustering
+Read the Docs

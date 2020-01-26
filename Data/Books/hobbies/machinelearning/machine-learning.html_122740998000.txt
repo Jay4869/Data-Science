@@ -1,0 +1,27 @@
+Machine Learning – GPU Accelerated Applications
+| NVIDIA
+PLATFORMS OTHER LINKS TECHNOLOGIES TESLA Inception AI Startup Program Inception AI Startup Program Machine Learning Machine Learning
+Early adopters of GPU
+accelerators for machine learning include many of the largest web and social
+media companies, along with top tier research institutions in data science and
+machine learning. With thousands of computational cores and 10-100x application
+throughput compared to CPUs alone, GPUs have become the processor of choice for
+processing big data for data scientists. Benchmark for Machine Learning Application "With GPUs, pre-recorded speech or multimedia content can be transcribed much more quickly. Compared to CPU implementation we are able to perform recognition up to 33x faster."
+Professor Ian Lane, Carnegie Mellon University
+NVIDIA DiGiTS DevBox
+Learn how other data scientists are advancing their work in the field of machine learning, and get information about tools, software frameworks, and computing configurations that will help you get started.
+Machine
+learning tools
+Competition winning papers
+and benchmarks
+Development Workstation
+Training Cluster
+2x NVIDIA Tesla K40 GPU Accelerator
+8x NVIDIA Tesla K40 GPU Accelerator
+2x Intel Xeon CPU (8 core or higher)
+2x Intel Xeon CPU (8 core or higher)
+64 GB System Memory
+256 GB System Memory
+Configuration Options
+SIGN UP FOR NVIDIA NEWS
+USA - United States
