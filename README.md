@@ -1,4 +1,22 @@
-# Statistical Machine Learning Spring 2019
+# Data Science Study Notes
+###### Author: Jay, Frances
 
-### Objectives:
-This course provides an introduction to Machine Learning and its core algorithms, with an emphasison the statistical properties of the learning methods. Topics include linear methods for regressionand classification, model selection and regularization, kernels, decision  trees, boosting, bagging, random forests, suport vector machines, principle component analysis, clustering, and Bayesianmodels.The course also gives a brief introduction to convex optimization and Markov chain MonteCarlo. Advanced topics may include neural networks, spectral clustering and non-linear dimensionreduction methods. The course is designed by studying deep Mathematic/Statistical theories and practical analysis within R and Python. Therefore, the repo helps me to track my coursework such as homeworks, labs and projects.
+## Objectives:
+
+This repo summaries the fundamentals of data science and machine learning algorithms in the context of real world applications. The content will combine both of intuition understanding and mathematic theories, but the goal is to motivate each tool by a concrete problem arising in industry. The major topics include data processing, statistics, machine learning, deep learning and analytical tools.
+
+## Outline:
+
+### Data Processing
+
+### Statistics
+
+### Time Series
+
+### NLP
+
+### Machine Learning
+
+### Deep Learning
+
+### Projects
