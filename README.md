@@ -3,15 +3,13 @@
 
 ## Objectives:
 
-This repo summaries the fundamentals of data science and machine learning algorithms in the context of real world applications. The content will combine both of intuition understanding and mathematic theories, but the goal is to motivate each tool by a concrete problem arising in industry. The major topics include data processing, statistics, machine learning, deep learning and analytical tools.
+This repo is summarying the foundation of data science and analysis in the context of real world applications. The content will combine both of intuition understanding, practical experience and mathematic theories. The goal is to motivate knowledge and experience by problems arising in academic study and industry. The major topics are covered as statistical analysis, machine learning, deep learning and analytical tools.
 
 ## Outline:
 
 ### Data Processing
 
 ### Statistics
-
-### Time Series
 
 ### NLP
 
