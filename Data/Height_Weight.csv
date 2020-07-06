@@ -1,13 +1,13 @@
-Name,Height,Weight,Hometown
-Ashley,155,140,Palo Alto
-Robin,145,122,Fremont
-Priyanka,152,131,Santa Clara
-Youngchul,167,148,Cupertino
-Aziz,161,139,San Francisco
-Zoey,181,190,Hayward
-Jay,183,180,Los Angeles
-Frances,172,110,Los Angeles
-Abby,158,120,Santa Clara
-Xia,162,110,San Francisco
-Emma,165,120,Fremont
-Terry,185,220,Palo Alto
+Name,Gender,Height,Weight,Hometown
+Ashley,F,155,140,Palo Alto
+Robin,M,145,122,Fremont
+Priyanka,M,152,131,Santa Clara
+Youngchul,M,167,148,Cupertino
+Aziz,F,161,139,San Francisco
+Zoey,F,181,190,Hayward
+Jay,M,183,180,Los Angeles
+Frances,F,172,110,Los Angeles
+Abby,F,158,120,Santa Clara
+Xia,F,162,110,San Francisco
+Emma,F,165,120,Fremont
+Terry,M,185,220,Palo Alto
