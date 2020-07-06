@@ -1,7 +1,4 @@
 # NLP - Word Vector
-
-View the book with "<i class="fa fa-book fa-fw"></i> Book Mode".
-
 ### One-hot-encoding
 One-hot-encoding is a representation of categorical variables as binary vectors. This first requires that the categorical values be mapped to integer values. Then, each integer value is represented as a binary vector that is all zero values except the index of the integer, which is marked with a 1.
 
@@ -65,5 +62,3 @@ At each training step in FastText, the mean of the target word vector and its co
 1. Use pre-trained embedding with a large vocabulary
 2. FastText
 3. LSTM
-
-###### tags: `Book`
