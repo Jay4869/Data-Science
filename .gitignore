@@ -1,6 +1,9 @@
 # Large Data File
 game_logs.csv
 
+# hidden file
+Projects/COVID-19/.idea
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
