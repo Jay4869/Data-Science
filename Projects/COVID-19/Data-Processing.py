@@ -2,46 +2,33 @@ import numpy as np
 import pandas as pd
 import datetime
 import os
+import us
 
-def ETL(file):
+def summary(file):
 
     # loading COVID-19 data and zipcode
     print('Processing {}'.format(file[-14:]))
     data = pd.read_csv(file)
-    data = data.query('Country_Region == "US"')[['FIPS', 'Admin2', 'Province_State', 'Confirmed', 'Deaths', 'Recovered']]
-
-    zipinfo = pd.read_csv('uszips.csv')[['county_fips', 'county_name', 'state_name', 'population']].groupby(['county_fips', 'county_name', 'state_name']).population.agg('sum').reset_index()
-
-    # rename features and change format
-    data.columns = ['FIPS', 'County', 'State', 'Confirmed', 'Deaths', 'Recovered']
-    data.fillna(0, inplace=True)
-    data.FIPS = data.FIPS.astype(int).astype(str).map(lambda x: '0'+x if len(x) == 4 and x != '0000' else x)    # remove decimal
-
-    zipinfo.columns = ['FIPS', 'County', 'State', 'population']
-    zipinfo.FIPS = zipinfo.FIPS.astype(str).map(lambda x: '0'+x if len(x) == 4 and x != '0000' else x)
+    data = data.query('Country_Region == "US" and Province_State != "Recovered"')[['FIPS', 'Admin2', 'Province_State', 'Confirmed', 'Deaths', 'Active']]
 
     # remove 'City' in the County columns to match zipcode table
-    data.County = data.County.str.replace(' City', '', regex=False)
+    data.Admin2 = data.Admin2.str.replace(' City', '', regex=False)
+    zipinfo.Admin2 = zipinfo.Admin2.str.replace(' City', '', regex=False)
 
     # final output features
-    feature = ['FIPS', 'County', 'State', 'population', 'Confirmed', 'Deaths', 'Recovered']
+    feature = ['FIPS', 'County', 'State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active']
 
     # extract non-missing records
-    x = pd.merge(data, zipinfo, on=['FIPS', 'County', 'State'], how='inner')[feature]
+    temp = pd.merge(zipinfo, data, on=['FIPS', 'Admin2', 'Province_State'], how='inner')
+    temp.insert(2, 'State_id', temp.Province_State.map(us.states.mapping('name', 'abbr')))
+    temp.columns = feature
 
-    # correct wrong FIPS and fill in missing
-    y = data[~data.FIPS.isin(x.FIPS)]
-    z = pd.merge(y[['County', 'State', 'Confirmed', 'Deaths', 'Recovered']], zipinfo, on=['County', 'State'], how='inner')[feature]
-
-    # merge two tables and sum same county records
-    data = pd.concat([x, z], ignore_index=True).groupby(['FIPS', 'County', 'State', 'population']).agg('sum').reset_index()
-
-    return data
+    return temp
 
 def increment(x, y):
 
     # merge two current and previous dataset
-    temp = pd.merge(x, y, on=['FIPS', 'County', 'State', 'population'], how='left')
+    temp = pd.merge(x, y, on=['FIPS', 'County', 'State_id', 'State', 'Population'], how='left')
 
     # fill NA for new county records
     temp.Confirmed_y.fillna(0, inplace=True)
@@ -50,26 +37,52 @@ def increment(x, y):
     # calculate incremental increase
     temp.eval('Confirmed_new = Confirmed_x - Confirmed_y', inplace=True)
     temp.eval('Deaths_new = Deaths_x - Deaths_y', inplace=True)
-    temp.eval('Recovered_new = Recovered_x - Recovered_y', inplace=True)
     temp.eval('Confirmed = Confirmed_x', inplace=True)
     temp.eval('Deaths = Deaths_x', inplace=True)
-    temp.eval('Recovered = Recovered_x', inplace=True)
-    temp.eval('Confirmed_rate = Confirmed_x / population', inplace=True)
-    temp.eval('Deaths_rate = Deaths_x / Confirmed_x', inplace=True)
-    temp.eval('Recovered_rate = Recovered_x / Confirmed_x', inplace=True)
+    temp.eval('Active = Active_x', inplace=True)
+    temp.eval('Confirmed_per_1000 = Confirmed_x / Population * 1000', inplace=True)
+    temp.eval('Deaths_per_1000 = Deaths_x / Population * 1000', inplace=True)
+    temp.eval('Actives_per_1000 = Active_x / Population * 1000', inplace=True)
 
     # final output
-    feature = ['FIPS', 'County', 'State', 'Confirmed', 'Deaths', 'Recovered', 'Confirmed_new', 'Deaths_new', 'Recovered_new', 'Confirmed_rate', 'Deaths_rate', 'Recovered_rate']
+    feature = ['FIPS', 'County', 'State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new', 'Deaths_new', 'Confirmed_per_1000', 'Deaths_per_1000', 'Actives_per_1000']
 
     # remove useless features and save CSV
-    temp = temp[feature]
-    temp.to_excel('covid_19_US.xlsx', index=False)
-    print(temp.shape)
+    temp[feature].to_excel('covid_19_US.xlsx', index=False)
+    print('Finish ETL: county-level summary, and total confirmed cases:', temp.Confirmed.sum())
 
+def ts(file):
+    
+    # load US national time series data
+    data = pd.read_csv(file)
+    feature = [i for i in data.columns if '20' in i]
+
+    # aggregate top 10 confirmed cases states
+    top10 = data.groupby('Province_State')[feature].agg('sum').sum(axis=1).sort_values(ascending=False).head(10).keys()
+    data.groupby('Province_State')[feature].agg('sum').transpose()[top10].to_csv('Top_10_states.csv', index=False)
+    
+    # aggregate daily cases
+    ts = data[feature].sum(axis=0)
+    ts.index = pd.to_datetime(ts.index)
+    ts = (ts - ts.shift(1)).fillna(0)
+    
+    ts.to_csv('Time_series_confirmed_cases.csv', index=False)
+    print('Finish ETL: time-series cases, and latest reported:', ts.values[-1])
+    
 if __name__ == '__main__':
-    path = '../../../COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/'
-
+    
+    # set path
+    path = 'd:/Projects/COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/'
     file = [i for i in os.listdir(path) if 'csv' in i]
-    current = ETL(path + file[-1])
-    previous = ETL(path + file[-2])
+    
+    # load zipcode info
+    zipinfo = pd.read_csv(path + '../UID_ISO_FIPS_LookUp_Table.csv')[['FIPS', 'Admin2', 'Province_State', 'Population']]
+    
+    # county-level summary
+    current = summary(path + file[-1])
+    previous = summary(path + file[-2])
     increment(current, previous)
+    
+    # time series
+    file = 'd:/Projects/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv'
+    ts(file)
