@@ -8,8 +8,7 @@ def summary(file):
 
     # loading COVID-19 data and zipcode
     print('Processing {}'.format(file[-14:]))
-    data = pd.read_csv(file)
-    data = data.query('Country_Region == "US" and Province_State != "Recovered"')[['FIPS', 'Admin2', 'Province_State', 'Confirmed', 'Deaths', 'Active']]
+    data = pd.read_csv(file).query('Country_Region == "US" and Province_State != "Recovered"')[['FIPS', 'Admin2', 'Province_State', 'Confirmed', 'Deaths', 'Active']]
 
     # remove 'City' in the County columns to match zipcode table
     data.Admin2 = data.Admin2.str.replace(' City', '', regex=False)
@@ -64,10 +63,13 @@ def ts(file):
     # aggregate daily cases
     ts = data[feature].sum(axis=0)
     ts.index = pd.to_datetime(ts.index)
-    ts = (ts - ts.shift(1)).fillna(0)
+    ts = (ts - ts.shift(1)).fillna(0).reset_index()
+    ts.columns = ['Date', 'Confirmed']
     
     ts.to_csv('Time_series_confirmed_cases.csv', index=False)
-    print('Finish ETL: time-series cases, and latest reported:', ts.values[-1])
+    print('Finish ETL: time-series cases, and latest reported:', ts.Confirmed.values[-1])
+    
+    return ts
     
 if __name__ == '__main__':
     
@@ -85,4 +87,6 @@ if __name__ == '__main__':
     
     # time series
     file = 'd:/Projects/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv'
-    ts(file)
+    confirmed_ts = ts(file)
+    
+    
