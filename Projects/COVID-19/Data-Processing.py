@@ -8,7 +8,7 @@ def summary(file):
 
     # loading COVID-19 data and zipcode
     print('Processing {}'.format(file[-14:]))
-    data = pd.read_csv(file).query('Country_Region == "US" and Province_State != "Recovered"')[['FIPS', 'Admin2', 'Province_State', 'Confirmed', 'Deaths', 'Active']]
+    data = pd.read_csv(file).query('Country_Region == "US" and Province_State not in ("Diamond Princess", "Grand Princess", "Recovered")')[['FIPS', 'Admin2', 'Province_State', 'Confirmed', 'Deaths', 'Active']].dropna(how='all')
 
     # remove 'City' in the County columns to match zipcode table
     data.Admin2 = data.Admin2.str.replace(' City', '', regex=False)
@@ -39,27 +39,33 @@ def increment(x, y):
     temp.eval('Confirmed = Confirmed_x', inplace=True)
     temp.eval('Deaths = Deaths_x', inplace=True)
     temp.eval('Active = Active_x', inplace=True)
-    temp.eval('Confirmed_per_1000 = Confirmed_x / Population * 1000', inplace=True)
-    temp.eval('Deaths_per_1000 = Deaths_x / Population * 1000', inplace=True)
-    temp.eval('Actives_per_1000 = Active_x / Population * 1000', inplace=True)
+    temp.eval('Confirmed_per_million = Confirmed_new / Population * 100000', inplace=True)
+    temp.eval('Deaths_per_million_confirmed = Deaths_x / Confirmed * 100000', inplace=True)
+    temp.eval('Actives_per_million = Active_x / Population * 100000', inplace=True)
 
     # final output
-    feature = ['FIPS', 'County', 'State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new', 'Deaths_new', 'Confirmed_per_1000', 'Deaths_per_1000', 'Actives_per_1000']
+    feature = ['FIPS', 'County', 'State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new', 'Deaths_new', 'Confirmed_per_million', 'Deaths_per_million_confirmed', 'Actives_per_million']
 
     # remove useless features and save CSV
-    temp[feature].to_excel('covid_19_US.xlsx', index=False)
+    temp[feature].to_csv('covid_19_US.csv', index=False)
     print('Finish ETL: county-level summary, and total confirmed cases:', temp.Confirmed.sum())
+    print('New cases are reported in LA:', temp.query('County == "Los Angeles"').Confirmed_new.sum())
+    
+    # state-level
+    temp = temp.groupby(['State_id', 'State'])[['State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new']].agg('sum')
+    temp.eval('Confirmed_per_million = Confirmed_new / Population * 100000', inplace=True)
+    temp.eval('Deaths_per_million_confirmed = Deaths / Confirmed * 100000', inplace=True)
+    temp.eval('Actives_per_million = Active / Population * 100000', inplace=True)
 
+    temp.to_csv('covid_states.csv')
+    print('Finish ETL: state-level summary, and yesterday reported in CA:', temp.query('State_id == "CA"').Confirmed_new.values[0])
+    
 def ts(file):
     
     # load US national time series data
-    data = pd.read_csv(file)
+    data = pd.read_csv(file).dropna(how='all')
     feature = [i for i in data.columns if '20' in i]
-
-    # aggregate top 10 confirmed cases states
-    top10 = data.groupby('Province_State')[feature].agg('sum').sum(axis=1).sort_values(ascending=False).head(10).keys()
-    data.groupby('Province_State')[feature].agg('sum').transpose()[top10].to_csv('Top_10_states.csv', index=False)
-    
+  
     # aggregate daily cases
     ts = data[feature].sum(axis=0)
     ts.index = pd.to_datetime(ts.index)
@@ -67,7 +73,7 @@ def ts(file):
     ts.columns = ['Date', 'Confirmed']
     
     ts.to_csv('Time_series_confirmed_cases.csv', index=False)
-    print('Finish ETL: time-series cases, and latest reported:', ts.Confirmed.values[-1])
+    print('Finish ETL: time-series cases, and yesterday reported:', ts.Confirmed.values[-1])
     
     return ts
     
@@ -78,7 +84,7 @@ if __name__ == '__main__':
     file = [i for i in os.listdir(path) if 'csv' in i]
     
     # load zipcode info
-    zipinfo = pd.read_csv(path + '../UID_ISO_FIPS_LookUp_Table.csv')[['FIPS', 'Admin2', 'Province_State', 'Population']]
+    zipinfo = pd.read_csv(path + '../UID_ISO_FIPS_LookUp_Table.csv').query('Province_State not in ("Recovered", "Guam", "Diamond Princess", "Grand Princess")')[['FIPS', 'Admin2', 'Province_State', 'Population']]
     
     # county-level summary
     current = summary(path + file[-1])
