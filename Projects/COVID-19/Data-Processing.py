@@ -63,7 +63,7 @@ def increment(x, y):
 def ts(file):
     
     # load US national time series data
-    data = pd.read_csv(file).dropna(how='all')
+    data = pd.read_csv(file).dropna(how='all').query('Province_State not in ("Diamond Princess", "Grand Princess")')
     feature = [i for i in data.columns if '20' in i]
 
     # aggregate confirmed cases by states
