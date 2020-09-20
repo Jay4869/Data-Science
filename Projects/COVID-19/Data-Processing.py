@@ -39,12 +39,12 @@ def increment(x, y):
     temp.eval('Confirmed = Confirmed_x', inplace=True)
     temp.eval('Deaths = Deaths_x', inplace=True)
     temp.eval('Active = Active_x', inplace=True)
-    temp.eval('Confirmed_per_million = Confirmed_new / Population * 100000', inplace=True)
-    temp.eval('Deaths_per_million_confirmed = Deaths_x / Confirmed * 100000', inplace=True)
-    temp.eval('Actives_per_million = Active_x / Population * 100000', inplace=True)
+    temp.eval('Confirmed_per_100k = Confirmed_new / Population * 100000', inplace=True)
+    temp.eval('Deaths_per_100k_confirmed = Deaths_x / Confirmed * 100000', inplace=True)
+    temp.eval('Actives_per_100k = Active_x / Population * 100000', inplace=True)
 
     # final output
-    feature = ['FIPS', 'County', 'State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new', 'Deaths_new', 'Confirmed_per_million', 'Deaths_per_million_confirmed', 'Actives_per_million']
+    feature = ['FIPS', 'County', 'State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new', 'Deaths_new', 'Confirmed_per_100k', 'Deaths_per_100k_confirmed', 'Actives_per_100k']
 
     # remove useless features and save CSV
     temp[feature].to_csv('covid_19_US.csv', index=False)
@@ -53,9 +53,9 @@ def increment(x, y):
     
     # state-level
     temp = temp.groupby(['State_id', 'State'])[['State_id', 'State', 'Population', 'Confirmed', 'Deaths', 'Active', 'Confirmed_new']].agg('sum')
-    temp.eval('Confirmed_per_million = Confirmed_new / Population * 100000', inplace=True)
-    temp.eval('Deaths_per_million_confirmed = Deaths / Confirmed * 100000', inplace=True)
-    temp.eval('Actives_per_million = Active / Population * 100000', inplace=True)
+    temp.eval('Confirmed_per_100k = Confirmed_new / Population * 100000', inplace=True)
+    temp.eval('Deaths_per_100k_confirmed = Deaths / Confirmed * 100000', inplace=True)
+    temp.eval('Actives_per_100k = Active / Population * 100000', inplace=True)
 
     temp.to_csv('covid_states.csv')
     print('Finish ETL: state-level summary, and yesterday reported in CA:', temp.query('State_id == "CA"').Confirmed_new.values[0])
@@ -65,7 +65,13 @@ def ts(file):
     # load US national time series data
     data = pd.read_csv(file).dropna(how='all')
     feature = [i for i in data.columns if '20' in i]
-  
+
+    # aggregate confirmed cases by states
+    temp = data.groupby('Province_State')[feature].agg('sum').transpose()
+    temp.index = pd.to_datetime(temp.index)
+    temp.to_csv('Time_series_confirmed_cases_states.csv')
+    print('Finish ETL: time-series cases by state.')
+    
     # aggregate daily cases
     ts = data[feature].sum(axis=0)
     ts.index = pd.to_datetime(ts.index)
