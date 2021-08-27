@@ -1,34 +1,43 @@
 # Deep Learning Concepts
 
 ### Multi-layer Perceptrons (MLP)
-Multi-layer Perceptrons are multi-input and multi-ouput parameteric functions, composing together.
+As in Neural Networks, MLPs have an input layer, a hidden layer, and an output layer. It has the same structure as a single layer perceptron with one or more hidden layers. A single layer perceptron can classify only linear separable classes with binary output (0,1), but MLP can classify nonlinear classes.
 1. Each sub-function is a layer of network, and each layer output of functions is a unit/feature
 2. Width: number of units in each layer
 3. Depth: number of layers
 
-### Activation Functions
-Control output value produced by a neuron and decide whether outside connections should consider this neuron as “actived” or not
+## Activation Functions
+an activation function controls output value produces and decides whether a neuron should be fired or not: Sigmoid, ReLU, Tanh, and Softmax 
 
-**Identity/Linear**: predict continuous target values using a linear combination of signals that arise from one or more layers of nonlinear transformations of the input.
+### Identity/Linear
+Predict continuous target values using a linear combination of signals that arise from one or more layers of nonlinear transformations of the input.
 
-**Sigmoid (Logistic) Function**: a soft assignment of step function as the probability of an artificial neuron “firing” given its inputs.
+### Sigmoid (Logistic) Function
+A soft assignment of step function as the probability of binary variables. It's used for binary classification in logistic regression and basic neural network implementation. The return value of Sigmoid Function is mostly in the range of values between 0 and 1.
 $$\sigma(x) = \frac{1}{1+e^{-x}}\\
 \partial\sigma(x) = \sigma(x)(1-\sigma(x))$$
 1. Nonlinear in nature
-2. range between (0,1)
-3. Small change input, large change output
-4. When towards the end, the output tend to respond very less to changes in X, so it will cause vanishing gradients
+2. Range $\in$ (0,1)
+3. The probabilities sum does not need to be 1 (probabilities produced are independent)
+4. Small change input, large change output
+5. When towards the end, the output tend to respond very less to changes in X (derivative having a short-range), so it will cause vanishing gradients, which leads to significant information loss
 
-**Hyperbolic Tangent**: Strongly negative inputs to the tanh will map to negative outputs. Additionally, only zero-valued inputs are mapped to near-zero outputs.
-$$f(x) = tanh(x) = \frac{e^z - e^{-z}}{e^z + e^{-z}}\\
-\partial f(x) = 1-f^2(x)$$
-
-**ReLu**: Rectified Linear Unit
+### ReLu
+Rectified Linear Unit
 $$\phi(x) = max(0, x)$$
 
-**Softmax**:
+### Softmax
+Normalized Exponential Function is a fascinating activation function that takes vectors of real numbers as inputs, and normalizes them into a probability distribution proportional to the exponentials of the input numbers. It's used for multi-classification in the Logistics Regression model and final layers of neural network-based classifiers.
+
 $$\phi(x) = \frac{e^x}{\sum_i^n e^x}$$
-For small dataset, it is even more important than learning the weights of the hidden layers.
+1. Range $\in$ (0,1)
+2. The probabilities sum will be 1 (probabilities produced are interrelated)
+
+
+### Hyperbolic Tangent
+Strongly negative inputs to the tanh will map to negative outputs. Additionally, only zero-valued inputs are mapped to near-zero outputs.
+$$f(x) = tanh(x) = \frac{e^z - e^{-z}}{e^z + e^{-z}}\\
+\partial f(x) = 1-f^2(x)$$
 
 **Softplus**:
 $$\phi(x) = log(1+e^x)$$
@@ -49,19 +58,21 @@ $$\phi(x) = |x|$$
 
 
 ## Optimization
-**Unconstrained Problem**: Apply the gradient-based optimization, and the standard steepest descent algorithm: $x \leftarrow x - \eta\ \nabla f(x)$
+### Unconstrained Problem
+Apply the gradient-based optimization, and the standard steepest descent algorithm: $x \leftarrow x - \eta\ \nabla f(x)$
 
-**Constrained Problem**: Lagrangin
-
+### Constrained Problem
+Lagrangin
 * In low-dimensioanl space, local minima are common
 * In higher dimensional spaces, local minima are rare and saddle points are exponetially more common
 
-**Empirical Risk Minimization**: The expectation is taken over the true underlying distribution, so the risk is a form of generalization error. Since we know the distribution from training set, it would be solved by an optimization algorithm.
+### Empirical Risk Minimization
+The expectation is taken over the true underlying distribution, so the risk is a form of generalization error. Since we know the distribution from training set, it would be solved by an optimization algorithm.
 1. Overfitting: model with high capacity can simply memorize the training set.
 2. Some loss functions are not feasible such as 0-1 loss.
 
 ### Gradient Descent
-The algorithm calls for updating the model parameters (weights and biases) with a small step in the direction of the gradient of the objective function that includes the terms of all the training set.
+The optimal algorithm is to minimize the cost function for updating the model parameters (weights and biases) with a small step in the direction of the gradient of the cost function that includes the terms of all the training set.
 
 The batch size is a hyper-parameter that defines the number of samples to work through before updating the internal model parameters. Think of a batch as a resampling method over one or more samples to train the model. At the end of the batch, the predictions are compared to the expected output variables and calculated the error. Then, perform Back-Propagation to improve the model.
 
@@ -105,6 +116,9 @@ The simplest solution is to use other activation functions, such as ReLU, which 
 
 However, RELU is that if you have a value less than 0, that neuron is dead, and the gradient passed back is 0, meaning that during back-propagation, you will have 0 gradient being passed back if you had a value less than 0. An alternative is Leaky RELU, which gives some gradient for values less than 0 in order to solve dead neuron issue and speed up. (it helps keep off-diagonal entries of the Fisher information matrix small)
 
+### Batch Normalization
+The process of standardizing and rescaling data is for each input variable per mini-batch. It’s a pre-processing step to eliminate data redundancy. Often, data comes in, and you get the same information in different formats. In these cases, you should rescale values to fit into a particular range, reducing the training time and achieving better convergence.
+
 ## Optimizer in Deep Learning
 **SGD Momentum**: Momentum accelerates SGD to solve poor conditioning of the Hessian matrix and vairance in SGD. We introduce a variable that is the direction and speed at which the parameteres move through the parameter space. The momentum is set to an exponentially decaying average of the negative gradient.
 
@@ -139,7 +153,7 @@ Using too many neurons in the hidden layers may result in overfitting. Overfitti
 * The number of hidden neurons should be less than twice the size of the input layer.
 
 ### Pooling
-A pooling function replaces the output of the layer with a summary local statistic. Pooling can make the representation become invariant to small local translations of the input.
+A down-sampling operation that summaries the local statistic and reduces the dimensionality of the feature map. Pooling can make the representation become invariant to small local translations of the input.
 1. Allow flexibility in the location of certain features
 2. Union similiar features together
 3. Reduce the output image size
@@ -206,11 +220,11 @@ The formulation $F(x)+x$ can be realized by feedforward neural networks with ide
 3. The model size is actually substantially smaller due to the usage of global average pooling rather than fully-connected layers, down to 102MB for ResNet50
 
 ## Recurrent Neural Network (RNN)
-RNN is a family of neural networks for processing sequential data that use their internal state (memory) to process sequences of the entire history of previous inputs in each output.
+RNN is a family of neural networks for processing sequential data that signals travel in both directions, creating a looped network. It considers the current input with the previously received inputs for generating the output of a layer and can memorize past data due to its internal memory.
 
 1. A single time step of the input is provided to the network.
 2. Then calculate its current state using set of current input and the previous state.
-3. The current ht becomes $h_{t-1}$ for the next time step.
+3. The current hit becomes $h_{t-1}$ for the next time step.
 4. One can go as many time steps according to the problem and join the information from all the previous states.
 5. Once all the time steps are completed the final current state is used to calculate the output.
 6. The output is then compared to the actual output i.e the target output and the error is generated.
@@ -218,6 +232,10 @@ RNN is a family of neural networks for processing sequential data that use their
 
 ## Long Short-Term Memory (LSTM)
 LSTM is a special kind of RNN, capable of learning long-term dependencies. LSTMS are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn.
+
+Step 1: The network decides what to forget and what to remember.
+Step 2: It selectively updates cell state values.
+Step 3: The network decides what part of the current state makes it to the output.
 
 ### Cell State
 * The key to LSTMs is the cell state, the horizontal line running through the top of the diagram.
