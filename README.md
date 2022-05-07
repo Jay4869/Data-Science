@@ -1,5 +1,5 @@
 # Data Science Study Notes
-###### Author: Jay, Frances
+###### Author: Jay Li, Frances Zhang, Steven Zhong
 
 ## Objectives:
 
@@ -11,10 +11,10 @@ This repo managers the foundation knowledge of data science and analysis in the 
 
 ### Statistics
 
-### NLP
-
 ### Machine Learning
 
 ### Deep Learning
+
+### NLP
 
 ### Projects
